@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+      <div>
+          <a href="#lightbox">LightBox</a>
+    </div>
+    <div id="lightbox">
+        <a href="#">X</a>
+        <p>
+            Some Content
+        </p>
+    </div>
+
+</body>
+</html>
+#lightbox{
+    width:0;
+    height:0;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow:hidden;
+    transition:all 2s ease-in-out;
+}
+
+#lightbox:target{
+    width:40%;
+    height:30%;
+    top:25%;
+    left:25%;
+    background-color:lightgrey;
+}

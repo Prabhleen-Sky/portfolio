@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reviews.css">
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src='jquery.min.js'></script>
+        <script src="reviews.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <!-- for stars in feedback -->
+        <!-- <script src='https://kit.fontawesome.com/42deadbeef.js'></script>  -->
+
+    <body>
+      <section class="reviews" id="reviews">
+         <div class="container">
+             <div class="row">
+                 <div class="section-title col-sm-12" >
+                     <h3>Reviews and Feedback </h3>
+                 </div>
+                 <br> <br> <br> <br> <br>
+                 <div class="part col-sm-12">
+                    <div class="reviews-nav col-sm-12">
+                        <ul>
+                            <li  class="current">
+                                <span id='showRev'>Reviews</span>
+                            </li>
+                            <li  class="current">
+                                <span id='showFeed'>Feedback</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>                 
+             </div>
+            <!-- </section> -->
+            
+             <!-- <section> -->
+<!------------------------------Review Cards  ------------------------------------------------------------ -->
+             <div class="container-fluid" >
+                 <div class="container" id="reviewSec">
+                     <div class="row"  >
+                         <div class="col-sm-4" >
+                             <div class="card text-center" >
+                                 <div class="content green">
+                                     <div class="text green">
+                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                               when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                        </p>
+                                     </div>
+                                    
+                                     <div class="user green">
+                                         <div class="image">
+                                             <img src="images.jpg" class="img-responsive">
+                                         </div>
+                                         <div class="details green">
+                                             <h2>Name <br> 
+                                                <span>Website designer</span>
+                                            </h2>
+                                         </div>
+                                     </div>
+
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-sm-4"  >
+                            <div class="card text-center">
+                                <div class="content pink">
+                                    <div class="text pink">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                       </p>
+                                    </div>
+                                   
+                                    <div class="user pink">
+                                        <div class="image ">
+                                            <img src="images.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="details pink">
+                                            <h2>Name <br> 
+                                               <span>Website designer</span>
+                                           </h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" >
+                            <div class="card text-center">
+                                <div class="content blue">
+                                    <div class="text blue">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                       </p>
+                                    </div>
+                                   
+                                    <div class="user blue">
+                                        <div class="image">
+                                            <img src="images.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="details blue">
+                                            <h2>Name <br> 
+                                               <span>Website designer</span>
+                                           </h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+<!------------------------------------------------- Feedback form--------------------------------------- -->
+
+      <div class="feedback" id="feedback">
+         <div class="wrapper">
+
+             <input type="radio" name="rate" id="star-1">
+             <input type="radio" name="rate" id="star-2">
+             <input type="radio" name="rate" id="star-3">
+             <input type="radio" name="rate" id="star-4">
+             <input type="radio" name="rate" id="star-5">
+             
+             <div class="content-feedback">
+                 <div class="outer">
+                     <div id="text">
+                     </div>
+
+                     <div class="emojis">
+                         <li class="slideImg">
+                            <img src="emojis/emoji-1.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-2.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-3.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-4.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-5.jpg" alt=''>
+                         </li>
+                     </div>
+                 </div>
+                 <div class="stars">
+                     <label for='star-1' class="star-1 fa fa-star"></label>
+                     <label for='star-2' class="star-2 fa fa-star"></label>
+                     <label for='star-3' class="star-3 fa fa-star"></label>
+                     <label for='star-4' class="star-4 fa fa-star"></label>
+                     <label for='star-5' class="star-5 fa fa-star"></label>
+                     
+                 </div>
+             </div>
+             <div class="footer">
+                 <span class="textF"></span>
+                 <span class="numb"></span>
+             </div>
+         </div>
+        </div>
+        </section>
+    </body>
+</html>

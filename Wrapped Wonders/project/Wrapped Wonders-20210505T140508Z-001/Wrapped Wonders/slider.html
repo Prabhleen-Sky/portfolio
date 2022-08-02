@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="slider.css">
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src='jquery.min.js'></script>
+        <script src="slider.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    
+    </head>
+    <body>
+<!------------------------------------------ Reviews And Feedback Buttons -------------------------------------------->
+      <section class="reviews" id="reviews">
+         <div class="container">
+             <div class="row">
+                
+                 <div class="part col-sm-12">
+                    <div class="reviews-nav col-sm-12">
+                        <ul>
+                            <li  class="current">
+                                <span id='showRev'>Reviews</span>
+                            </li>
+                            <li  class="current">
+                                <span id='showFeed'>Feedback</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>                 
+             </div>
+        
+<!------------------------------Review Cards  ------------------------------------------------------------ -->
+
+
+      
+          <div class="container slide-wrap">
+              <br> <br>
+           
+               
+              <div class="row" id='slideshow'>
+                  <div class="col-sm-12 testimonials " id='slide-1'>
+                    <div class='col-sm-3 green'>
+                            <img src='emojis/emoji-3.jpg'>
+                        <div class='contentRev'>
+                        <p>
+                            Thank you for your email.thank you so much for your wonderful 
+                            Suprise delivery.
+                            Really I appreciate and happy. 
+                        </p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    </div>
+                    <div class='col-sm-3 pink'>
+                        
+                            <img src='emojis/emoji-3.jpg'>
+                        
+                        <div class='contentRev'>
+                        <p>
+                            Hi, It was my brother's birthday and I wanted to order a cake to be 
+                            delivered on the same day. It was my first time ordering from this site
+                            and I'm very glad now.
+                    
+                        </p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    </div>
+                    <div class='col-sm-3 blue'>
+                        
+                            <img src='emojis/emoji-3.jpg'>
+                       
+                        <div class='contentRev'>
+                        <p>
+                            Thank you so much for timely delivery, much appreciated. Will surely
+                            use the service again to send gifts
+                        </p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    </div>
+               </div>
+
+
+
+                 <div class="col-sm-12 testimonials" id='slide-2'>
+                    <div class='col-sm-3 pink'>
+                        
+                            <img src='emojis/emoji-3.jpg'>
+                       
+                        <div class='contentRev'>
+                        <p>Okkk...... it should work now<br> please!!!!!</p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    </div>
+                    <div class='col-sm-3 blue'>
+                       
+                            <img src='emojis/emoji-3.jpg'>
+                       
+                        <div class='contentRev'>
+                        <p>Okkk...... it should work now<br> please!!!!!</p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    </div>
+                    <div class='col-sm-3 green'>
+                        
+                            <img src='emojis/emoji-3.jpg'>
+                       
+                        <div class='contentRev'>
+                        <p>Okkk...... it should work now<br> please!!!!!</p>
+                        <br>
+                        <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                        </div>
+                    
+               </div>
+               </div>
+
+
+               <div class="col-sm-12 testimonials" id='slide-3'>
+                <div class='col-sm-3 blue'>
+                    
+                        <img src='emojis/emoji-3.jpg'>
+                    
+                    <div class='contentRev'>
+                    <p>Okkk...... it should work now<br> please!!!!!</p>
+                    <br>
+                    <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                    </div>
+                </div>
+                <div class='col-sm-3 green'>
+                   
+                        <img src='emojis/emoji-3.jpg'>
+                 
+                    <div class='contentRev'>
+                    <p>Okkk...... it should work now<br> please!!!!!</p>
+                    <br>
+                    <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                    </div>
+                </div>
+                <div class='col-sm-3 pink'>
+                   
+                        <img src='emojis/emoji-3.jpg'>
+                   
+                    <div class='contentRev'>
+                    <p>Okkk...... it should work now<br> please!!!!!</p>
+                    <br>
+                    <p class='nameRev'><strong>Lisa</strong> <br> Customer ...</p>
+                    </div>
+                
+           </div>
+           </div>
+
+            
+        </div>
+
+              <a href='#slide-1' id='lefta' class='abutton'> </a>
+              <a href='#slide-2' id='lefta1' class='abutton'></a>
+              <a href='#slide-3' id='lefta2' class='abutton'></a>
+     </div>
+      
+    
+
+<!------------------------------------------------- Feedback form--------------------------------------- -->
+
+      <div class="feedback" id="feedback">
+         <div class="wrapper">
+
+             <input type="radio" name="rate" id="star-1">
+             <input type="radio" name="rate" id="star-2">
+             <input type="radio" name="rate" id="star-3">
+             <input type="radio" name="rate" id="star-4">
+             <input type="radio" name="rate" id="star-5">
+             
+             <div class="content-feedback">
+                 <div class="outer">
+                     <div id="text">
+                     </div>
+
+                     <div class="emojis">
+                         <li class="slideImg">
+                            <img src="emojis/emoji-1.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-2.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-3.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-4.jpg" alt=''>
+                         </li>
+                         <li >
+                            <img src="emojis/emoji-5.jpg" alt=''>
+                         </li>
+                     </div>
+                 </div>
+                 <div class="stars">
+                     <label for='star-1' class="star-1 fa fa-star"></label>
+                     <label for='star-2' class="star-2 fa fa-star"></label>
+                     <label for='star-3' class="star-3 fa fa-star"></label>
+                     <label for='star-4' class="star-4 fa fa-star"></label>
+                     <label for='star-5' class="star-5 fa fa-star"></label>
+                     
+                 </div>
+             </div>
+             <div class="footer">
+                 <span class="textF"></span>
+                 <span class="numb"></span>
+             </div>
+         </div>
+        </div>
+        </section>
+    </body>
+</html>

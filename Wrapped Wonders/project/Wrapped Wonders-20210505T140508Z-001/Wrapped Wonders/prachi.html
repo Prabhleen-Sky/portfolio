@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>special</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src='jquery.min.js'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<section id="special" class="container-fluid">
+
+	<div class="heading text-center">
+	<h1>Our<span> Special </span></h1>
+	</div>
+
+	<div class="card-container">
+		 
+		 <div class="card">
+			<img src="emojis/emoji-3.jpg" alt="">
+			<p>cbfbbncbfbgfgrgfukmgfgsfd</p>
+			<a href="#"><button>read more</button></a>
+		 </div>
+		 
+		 <div class="card">
+			<img src="emojis/emoji-3.jpg" alt="">
+			<p>cbfbbncbfbgfgrgfukmgfgsfd</p>
+			<a href="#"><button>read more</button></a>
+		 </div>
+		 
+		 <div class="card">
+			<img src="emojis/emoji-3.jpg" alt="">
+			<p>cbfbbncbfbgfgrgfukmgfgsfd</p>
+			<a href="#"><button>read more</button></a>
+		 </div>
+		 
+		
+		 
+	</div>	 
+	 
+</section>
+<script>
+   
+   $(window).on('scroll load',function(){
+         if($(window).scrollTop() > 10){
+		     $('#header').addClass('header-active');
+		 }else{
+              $('#header').removeClass('header-active');
+         }
+    });		 
+
+</script>
+</body>
+</html>

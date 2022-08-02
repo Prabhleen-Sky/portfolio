@@ -1,0 +1,2255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    font-family: "Poppins", sans-serif;
+    color: #5a5a5a;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin-top: 0;
+    font-family: "Baloo 2", cursive;
+}
+h1{
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+}
+h2{
+    font-size: 36px;
+    line-height: 36px;
+}
+h3{
+    font-size: 30px;
+    line-height: 30px;
+}
+h4{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+h5{
+    font-size: 14px;
+    line-height: 18px;
+}
+h6{
+    font-size: 12px;
+    line-height: 14px;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+a,button{
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:focus{
+    box-shadow: none;
+}
+a,button,img,input,span{
+    transition: all 0.3s ease 0s;
+}
+*:focus{
+    outline: none !important;
+}
+a:focus{
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+button,input[type="submit"]{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.home_black_version{
+    background: rgba(0, 0, 0,0.1);
+}
+.header_black .header_top{
+    background: #f19898;
+}
+.header_black .social_icons{
+    color: #ccc;
+}
+.header_black .social_icons ul li a:hover{
+    background:   #e77878;
+}
+.header_black .top_right > ul >li::before{
+    background: #2d2d2d;
+}
+.header_black .top_right > ul > li:hover > a{
+    color:   #e77878;
+}
+.header_black .top_right > ul > li > a{
+    color:#2d2d2d;
+}
+.header_black .top_right > ul >li >a:not([href]):not([tabindex]){
+    color: #ffffff;
+}
+.header_black .top_right > ul >li >a:not([href]):not([tabindex]):hover{
+    color: #ffffff;
+}
+
+/*.header_black .dropdown_language li,
+.header_black .dropdown_currency li,
+.header_black .dropdown_links li{
+    border-bottom: 1px solid #2d2d2d;
+}*/
+.header_black .dropdown_links li a:hover{
+    color:   #e77878;
+}
+.header_black .dropdown_links{
+    left: -98%;
+}
+.social_icons ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.social_icons ul li:first-child{
+    margin-left: 0;
+}
+.social_icons ul li a{
+    background: rgba(105, 103, 103, 0.667);
+    color: #ebebeb;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.social_icons ul li a:hover{
+    background:   #e77878;
+    color: #ffffff;
+}
+.top_right > ul >li{
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+/*.top_right > ul >li:hover ul.dropdown_currency{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}*/
+.top_right > ul >li:hover .header_black ul.dropdown_links,
+.header_black .top_right > ul > li:hover ul.dropdown_links{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.top_right > ul > li:hover ul.dropdown_links{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.top_right > ul > li:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+.top_right > ul > li::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #ebebeb;
+    top: 50%;
+    left:0px;
+    transform: translateY(-50%);
+}
+.top_right > ul > li:first-child::before{
+    display: none;
+}
+.top_right >.top_links > ul > li > a{
+    color:#fff;
+    text-transform: capitalize;
+    line-height: 26px;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    padding: 9px 0;
+}
+.top_right > ul > li > a i{
+    margin-left: 3px;
+    font-size: 10px;
+}
+.top_right button.login_btn{
+    background-color: #e77878;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+    outline: none;
+    margin-top: 5px;
+}
+.top_right button.login_btn:hover{
+    background-color: #f19898;
+}
+.top_right button.login_btn a:hover{
+    color: #f1206a;
+}
+.header_black .dropdown_links{
+    position: absolute;
+    background: #ffffff;
+    box-shadow:  00 5px rgba(0, 0,0,0.2);
+    min-width: 200px;
+    text-align: center;
+    top: 125%;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    left: -154%;
+    z-index: 9999;
+    padding: 0 15px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+.header_black .dropdown_links{
+    background-color: white;
+}
+.header_black .dropdown_links li a{
+    text-transform: capitalize;
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.dropdown_language li a:hover,
+.header_black .dropdown_links li a:hover{
+    color:   #e77878;
+}
+.header_black .dropdown_language li:last-child,
+.header_black .dropdown_links li:last-child{
+    border-bottom: 0;
+}
+
+.header_black .dropdown_links li a{
+    color: #242424;
+}
+.header_black .dropdown_links{
+    left: -98%;
+}
+.dropdown_language li,
+.header_black .dropdown_links li{
+    border-bottom: 1px solid #2d2d2d;
+    line-height: 36px;
+    padding: 5px 0;
+}
+/*************************Middle Header****************************************/
+.header_middle{
+    padding: 40px 0;
+    border-bottom: 1px solid #ebebeb;
+    background:white;
+}
+/*.header_black .header_middle{
+    border-bottom: 1px solid #2d2d2d;
+}*/
+.home_contact{
+    display: flex;
+}
+.home_contact .contact_icons img{
+    height: 50px;
+}
+.home_contact .contact_box{
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 2px solid #cccccc;
+}
+.header_black .home_contact{
+    align-items: center;
+}
+.header_black .contact_box{
+    margin-left: 15px;
+}
+.header_black .contact_box p{
+    color:   #e77878;
+    font-size: 14px;
+}
+.logo{
+    padding: 0 20px;
+}
+.logo a{
+  font-family: 'Times New Roman';
+  font-size: 1.5em;
+}
+.logo img{
+    width: 65%;
+}
+.middle_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search_btn{
+    position: relative;
+}
+.search_btn:hover .dropdown_search{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.search_btn a{
+    position: absolute;
+    top: -1.3rem;
+    right: 0.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #242424;
+    color:#242424;
+    font-size: 20px;
+    display: block;
+}
+.search_btn a:hover{
+    color:   #e77878;
+}
+.header_black .search_btn form button{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border: 0;
+    background: inherit;
+    color: #ffffff;
+    font-size: 20px;
+    height: 100%;
+}
+.header_black .search_btn form button:hover{
+    color:   #e77878;
+}
+.dropdown_search{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 120%;
+    transition: 0.3s;
+}
+.dropdown_search form{
+    position: relative;
+    width: 280px;
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+    z-index: 9;
+}
+.dropdown_search form input{
+    border: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 67px 0 10px;
+    background: inherit;
+    font-size: 12px;
+    color: #a4a4a4;
+}
+.dropdown_search form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ebebeb;
+    width: 59px;
+    height: 100%;
+    border: 0;
+    border-left: 1px solid #2d2d2d;
+    padding: 0;
+    font-size: 20px;
+    background: none;
+    color: #ffffff;
+}
+.header_black .dropdown_search form{
+    background: lightgrey;
+    border: 1px solid #2d2d2d;
+}
+.header_black .wishlist_btn{
+    margin-left: 18px;
+}
+.header_black .wishlist_btn a{
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    display: block;
+    border: 1px solid #2d2d2d;
+    color: #e77878;
+}
+.header_black .wishlist_btn a:hover{
+    color:   #2e2e2e;
+}
+.cart_link{
+    margin-left: 25px;
+    position: relative;
+}
+.cart_link span.cart_quantity{
+    position: absolute;
+    left: -11px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    background:   #e77878;
+    color: #ffffff;
+    border-radius: 50%;
+    top: 12px;
+}
+.cart_link > a{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #212121;
+    border: 1px solid #ebebeb;
+    padding: 11px 10px 13px 18px;
+    line-height: 15px;
+    border-radius: 3px;
+    display: block;
+}
+.cart_link span.cart_text_quantity{
+  color:#e77878
+}
+.cart_link span.cart_text_quantity:hover{
+  color: #2e2e2e;
+}
+.cart_link > a i.bxs-cart{
+    font-size: 19px;
+    margin-right: 10px;
+    border-right: 1px solid #ebebeb;
+    position: relative;
+    top: 3px;
+    padding-right: 10px;
+    color: #e77878;
+}
+.cart_link  a i.bxs-cart:hover{
+  color: #2e2e2e;
+}
+.cart-link > a i.bxs-chevron-down{
+    font-size: 17px;
+    margin-left: 3px;
+}
+.header_black .cart_link span.cart_quantity{
+    background:   #e77878;
+}
+.header_black .cart_link > a{
+    color: #ffff;
+    border: 1px solid #2d2d2d;
+}
+.header_black .cart_link >a:hover{
+    color:   #e77878;
+}
+.header_black .cart_link > a i.bxs-cart{
+    border-right: 1px solid #2d2d2d;
+}
+.mini_cart{
+    position: fixed;
+    min-width: 355px;
+    height: 100%;
+    padding: 18px 20px 33px;
+    background-color: #ffffff;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+.mini_cart.active{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.header_black .mini_cart{
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+.cart_close{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+.header_black .cart_close{
+    border-bottom: 1px solid #2d2d2d;
+}
+.cart_text h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #e77878;
+}
+.mini_cart_close > a{
+    font-size: 25px;
+    color: #2d2d2d;
+}
+.mini_cart_close >a:hover{
+    color:   #e77878;
+}
+.cart_item{
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    overflow: hidden;
+}
+.cart_img{
+    width: 100px;
+    margin-right: 10px;
+}
+.cart_info{
+    width: 58%;
+}
+.cart_info a{
+    font-weight: 400;
+    color: #2d2d2d;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.cart_info a:hover{
+    color:   #e77878;
+}
+.cart_info span{
+    display: block;
+}
+.cart_info span.price_cart{
+    color:   #e77878;
+    font-weight: 500;
+}
+.header_black .cart_info span.quantity{
+    color: #a0a0a0;
+}
+.cart_remove{
+    width: 10%;
+    text-align: right;
+}
+.cart_remove a {
+    color: #2d2d2d;
+    font-size: 18px;
+}
+.cart_remove a:hover{
+    color:   #e77878;
+}
+.cart_total{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.cart_total span{
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 400;
+}
+.mini_cart_footer{
+    padding: 0 25px 25px;
+    background: lightgrey;
+}
+.cart_button a{
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #2e2e2e;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 13px 0 11px;
+}
+.cart_button a:hover{
+    background:   #e77878;
+}
+.cart_button.view_cart{
+    padding-bottom: 15px;
+}
+.cart_button a.active{
+    background:   #e77878;
+}
+.cart_button a.active:hover{
+    background: #eb6e6e;
+    color: #000;
+    font-weight: 600;
+}
+/***************************Header Down*******************************************/
+.header_bottom.sticky-header.sticky .main_menu_inner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_bottom{
+    background-color: #f19898;
+}
+.header_bottom.sticky-header.sticky .logo_sticky {
+  display: block;
+}
+
+/*.header_black .header_bottom {
+  border-bottom: 1px solid #2d2d2d;
+}*/
+
+.sticky-header.sticky {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+  animation-name: fadeInDown;
+  animation-duration: 900ms;
+  animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.header_bottom.sticky-header.sticky .main_menu_inner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_black .sticky-header.sticky {
+  background: rgba(240, 113, 145, 0.911);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+}
+
+.main_menu_inner {
+  text-align: center;
+}
+
+.logo_sticky {
+  display: none;
+  margin-right: 35px;
+}
+
+.logo_sticky a img {
+  max-width: 120px;
+}
+
+.main_menu nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+.main_menu nav > ul > li > a i {
+  margin-left: 2px;
+}
+.main_menu nav > ul > li:hover > a {
+  color:   #e77878;
+}
+
+.main_menu nav > ul > li.active > a {
+  color:   #e77878;
+}
+
+.main_menu nav > ul > li:first-child a {
+  padding-left: 0;
+}
+
+.main_menu nav > ul > li:last-child a {
+  padding-right: 0;
+}
+
+.main_menu nav > ul > li ul.sub_menu {
+  position: absolute;
+  min-width: 200px;
+  padding: 30px 25px;
+  background-color: lightgrey;
+  border: 1px solid #ebebeb;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 9;
+  top: 100%;
+  text-align: left;
+}
+
+.main_menu nav > ul > li ul.sub_menu > li > a {
+  font-size: 15px;
+}
+
+.main_menu nav ul li:hover .sub_menu,
+.main_menu nav ul li:hover .mega_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.main_menu nav ul li ul li.active a,
+.main_menu nav ul li ul li a:hover {
+  color: #c09578;
+}
+
+.main_menu nav > ul > li > ul > li > a {
+  color: #808080;
+  font-size: 13px;
+  text-transform: capitalize;
+  line-height: 18px;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 400;
+}
+
+.main_menu nav > ul > li > ul.sub_menu > li:last-child > a {
+  margin-bottom: 0;
+}
+.main_menu nav > ul > li > ul.mega_menu li ul li:last-child a {
+  margin-bottom: 0;
+}
+
+.main_menu nav ul li ul.mega_menu {
+  position: absolute;
+  min-width: 1000px;
+  padding: 30px 25px 35px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 9;
+  top: 100%;
+  text-align: left;
+}
+
+.main_menu nav > ul > li > ul.mega_menu > li {
+  width: 23%;
+  float: left;
+}
+
+.main_menu nav > ul > li > ul.mega_menu > li > a {
+  text-transform: uppercase;
+  color: #242424;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.main_menu nav > ul > li > ul.maga_menu > li > a:hover {
+  color: #c09578;
+}
+
+.main_menu nav > ul > li > ul.maga_menu li ul li a {
+  color: #808080;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 11px;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.main_menu nav > ul > li > ul.maga_menu li ul li a:hover {
+  color: #c09578;
+}
+
+.header_black .main_menu nav > ul > li.active > a {
+  color:  white;
+}
+
+.header_black .main_menu nav > ul > li:hover > a {
+  color:   white;
+}
+
+.header_black .main_menu nav > ul > li > a {
+  color: #2d2d2d;
+  font-family: serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.header_black .main_menu nav > ul > li ul.sub_menu {
+  background: lightgrey;
+  border: 1px solid lightgrey;
+}
+.header_black .main_menu nav > ul > li ul.sub_menu li a {
+  color: #2d2d2d;
+  font-family: serif;
+}
+
+.header_black .main_menu nav > ul > li ul.sub_menu li a:hover {
+  color:   #e77878;
+}
+
+.header_black .main_menu nav > ul > li ul.mega_menu {
+  background: lightgrey;
+  border: 1px solid lightgrey;;
+}
+.header_black .main_menu nav > ul > li ul.mega_menu > li > a {
+  color: #2d2d2d;
+  font-family: serif;
+}
+.header_black .main_menu nav > ul > li ul.mega_menu > li > a:hover {
+  color:   #e77878;
+}
+.header_black .main_menu nav > ul > li ul.mega_menu > li ul li a {
+  color: #2d2d2d;
+}
+
+.header_black .main_menu nav > ul > li ul.mega_menu > li ul li a:hover {
+  color:   #e77878;
+}
+.ion-chevron-down {
+  font-size: 14px;
+  padding-left: 3px;
+}
+.main_menu nav > ul > li > a {
+  display: block;
+  padding: 19px 20px;
+  color: #212121;
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+ /* --------------------------------coupon/offers section starts------------------------------------------- */
+ /*#fixedImg{  
+    position: sticky;
+    z-index: -1;
+    top: 0;
+}
+
+#fixedImg img{
+    width:100%;
+    height:1005;
+    opacity:0.6;
+}*/
+#offers{
+    background-color: white;
+}
+#offerCards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:97vw; /*1550px;  97vw;*/
+    height:50vh;
+    /*margin-bottom: 15%;*/
+}
+
+#offers h1{
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1rem;
+    color: inherit;
+}
+
+.offerbtn{
+    width: 100%;
+    height: 22%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 98%;
+}
+
+.coupons{
+    width:15%;
+    height:70%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 2em;
+}
+
+.coupons:hover{
+    transform:scale(1.1);
+}
+
+#cpn1{
+  background-image: url(https://image.shutterstock.com/image-vector/5-off-vector-graphics-sticker-260nw-1712513638.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#cpn2{
+  background-image: url(https://image.shutterstock.com/image-vector/35-off-discount-sticker-sale-260nw-1034889055.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#cpn3{
+  background-image: url(https://media.istockphoto.com/vectors/discount-sticker-sale-red-tag-isolated-vector-illustration-discount-vector-id837371254?k=6&m=837371254&s=170667a&w=0&h=bWGwEw-iRWUkFgCbQtafY34frsffzn6qgE4x9iG-Yyg=);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#cpn4{
+  background-image: url(https://image.shutterstock.com/image-illustration/discount-18-percent-off-3d-260nw-473362147.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#cpn5{
+  background-image: url(https://image.shutterstock.com/image-illustration/brilliant-promotion-sale-poster-banner-260nw-633498011.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#cpn6{
+  background-image: url(https://image.shutterstock.com/image-vector/sale-tag-vector-badge-template-260nw-730447786.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/**********************Products section******************************/
+.product_title{
+    text-align: center;
+}
+.products_area ul{
+    justify-content: center;
+}
+.products_area ul li{
+    margin-right: 45px;
+}
+.products_area ul li:last-child{
+    margin-right: 0px;
+}
+.products_area ul li a:hover{
+    color:#e77878;
+}
+.products_area ul li a.active{
+    color:#e77878;
+}
+
+/*men*/
+.products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+    margin-left: 7rem;
+}
+.cakes_men,.cakes_women,.cakes_uni,.cakes_kids{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.cakes_men div, .cakes_women div,.cakes_uni div,.cakes_kids div{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.cakes_men img,.cakes_women img,.cakes_uni img,.cakes_kids img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.4;
+}
+.bouquets_men,.bouquets_women,.toys_kids,.bouquets_uni{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.bouquets_men div,.bouquets_women div,.toys_kids div,.bouquets_uni div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.bouquets_men img,.bouquets_women img,.toys_kids img,.bouquets_uni img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.personlizedgifts_men,.personlizedgifts_women,.stationary_kids,.personlizedgifts_uni{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.personlizedgifts_men div,.personlizedgifts_women div,.stationary_kids div,.personlizedgifts_uni div{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.personlizedgifts_men img,.personlizedgifts_women img,.stationary_kids img,.personlizedgifts_uni img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.men_accessories,.women_accessories,.personlizedgifts_kids,.uni_accessories{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.men_accessories div,.women_accessories div,.personlizedgifts_kids div,.uni_accessories div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.men_accessories img,.women_accessories img,.personlizedgifts_kids img,.uni_accessories img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.title{
+    margin: 4rem 0 7rem 0;
+    text-align: center;
+}
+.title h1{
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    font-weight: normal;
+}
+.title h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translate(-50%,-50%);
+    background-color: #e77878;
+    width: 50%;
+    height: 0.4rem;
+    z-index: 1;
+}
+.product-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem 2rem;
+}
+.product {
+    height: 30rem;
+    width: 20rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.product:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+.product-header {
+    position: relative;
+    height: 20rem;
+    background-color: #f6f2f1;
+    transition: all 300ms ease-in-out;
+    z-index: 0;
+}
+.product-header img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+.product-footer {
+    padding: 2rem 1.6rem 1.6rem 1.6rem;
+}
+.product-footer h3 {
+    font-size: 1.8rem;
+} 
+.product-footer .price {
+    color: #ff7c9c;
+    font-size: 1.2rem;
+}
+.product:hover .product-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-in-out;
+    z-index: 1;
+}
+.product-header .icons {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%) scale(0);
+    z-index: 2;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.product-header .icons span {
+    background-color: #fff;
+    font-size: 2.5rem;
+    display: block;
+    border-radius: 50%;
+    padding: 1.5rem 1.6rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.product-header .icons span i {
+    transition: all 500ms ease-in-out;
+}
+.product-header .icons span:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.product-header .icons span:hover {
+    background-color: #ff7c9c;
+    color: #fff;
+}
+.product:hover .icons {
+    opacity: 1;
+    transform: translate(0, -50%) scale(1);
+  }
+.product-header .icons a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+/*women*/
+.products_collection_women{
+    display: none;
+}
+/*.cakes_women{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.cakes_women div{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}*/
+/*.cakes_women img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.4;
+}
+.bouquets_women{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.bouquets_women div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.bouquets_women img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.personlizedgifts_women{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.personlizedgifts_women div{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.personlizedgifts_women img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.women_accessories{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.women_accessories div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.women_accessories img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}*/
+/*kids*/
+.products_collection_kids{
+   display: none;
+}
+/*.cakes_kids{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}*/
+/*.cakes_kids div{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.cakes_kids img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.4;
+}
+.toys_kids{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.toys_kids div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.toys_kids img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.stationary_kids{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.stationary_kids div{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.stationary_kids img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.personlizedgifts_kids{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.personlizedgifts_kids div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.personlizedgifts_kids img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}*/
+/*unisex*/
+.products_collection_unisex{
+    display: none;
+ }
+.cakes_uni div{
+  position: absolute;
+  left: 1%;
+}
+/*.cakes_uni{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.cakes_uni div{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.cakes_uni img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.4;
+}
+.bouquets_uni{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.bouquets_uni div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.bouquets_uni img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.personlizedgifts_uni{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.personlizedgifts_uni div{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.personlizedgifts_uni img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+.uni_accessories{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 3rem;
+    position: relative;
+    text-align: center;
+}
+.uni_accessories div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.uni_accessories img{
+    height: inherit;
+    width: inherit;
+    border-radius: 15%;
+    opacity: 0.6;
+}*/
+/*Product Details*/
+#categories{
+  background: white;
+}
+.product-details .details{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 7rem;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.container-md{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.product-details .details .left{
+    display: flex;
+    flex-direction: column;
+}
+.product-details .details .left .main{
+    text-align: center;
+    background-color: #f6f2f1;
+    margin-bottom: 2rem;
+    height: 45rem;
+    padding: 3rem;
+}
+.product-details .details .left .main img{
+    object-fit: contain;
+    height: 100%;
+}
+.product-details .details .thumbnails{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.product-details .thumbnail{
+    width: 10rem;
+    height: 10rem;
+    background-color: #f6f2f1;
+    text-align: center;
+}
+.product-details .thumbnail img{
+    height: 100%;
+    object-fit: contain;
+}
+.product-details .right span{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.product-details .right h1{
+    font-size: 3rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+.product-details .right .price{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #ff7c9c;
+    margin-bottom: 2rem;
+}
+.product-details .right div{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.product-details .right select{
+    font-family: sans-serif;
+    width: 20rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    appearance: none;
+    outline: none;
+}
+.product-details form{
+    margin-bottom: 2rem;
+}
+.product-details form span{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 0;
+}
+.product-details .form{
+    margin-bottom: 3rem;
+}
+.product-details .form input{
+    padding: .8rem;
+    text-align: center;
+    width: 3.5rem;
+    margin-right: 2rem;
+}
+.product-details .form .addCart{
+    background-color: #e77878;
+    padding: 0.8rem 4rem;
+    color: #fff;
+    border-radius: 3rem;
+}
+.product-details h3{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 996px){
+    .product-details .left{
+        width: 30rem;
+        height: 45rem;
+    }
+    .product-details .details{
+        gap: 3rem;
+    }
+    .product-details .thumbnails{
+        width: auto;
+        height: 10rem;
+        background-color: #f6f2f1;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+@media only screen and (max-width: 650px){
+    .product-details .details{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    .product-details .right{
+        margin-top: 20rem;
+    }
+    .product-details .left{
+        width: 100%;
+        height: 45rem;
+    }
+    .product-details .thumbnails{
+        width: 100%;
+    }
+}
+/*Cart Items*/
+.cart {
+    margin: 10rem auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  th {
+    text-align: left;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #fc7c7c;
+    font-weight: normal;
+  }
+  
+  td {
+    padding: 1rem 0.5rem;
+  }
+  
+  td input {
+    width: 5rem;
+    height: 3rem;
+    padding: 0.5rem;
+  }
+  
+td a {
+    color: orangered;
+    font-size: 1.4rem;
+}
+  
+  td img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+  }
+  
+  .total-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .total-price table {
+    border-top: 3px solid #fc7c7c;
+    width: 100%;
+    max-width: 35rem;
+  }
+  
+  td:last-child {
+    text-align: right;
+  }
+  
+  th:last-child {
+    text-align: right;
+  }
+  
+  @media only screen and (max-width: 567px) {
+    .cart-info p {
+      display: none;
+    }
+  }
+/*----------------------------------- Start of Hot Deal Section -------------------------------------*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#hotDeals{
+  background: lightgrey;
+}
+/*------------------- adding wavy underline --------------------- */
+#name_Deals  a{
+  text-align: center;
+  font-size: 4em;
+  margin-left: 45%;
+  color: #E1306C;
+
+}
+/* --------setting the position & width & height of slide container----- */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 70vh;
+ 
+}
+/* -------------adding properties to left slide container------------ */
+.left-slide {
+  height: 100%;
+  width: 36.5%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+  
+}
+/*---------------- setting the display for all the divs of left container--------------- */
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+/*---------------- giving font size and margin to the product name in hot deals section---------------- */
+.left-slide h1 {
+  font-size: 3em;
+  margin-bottom:10px;
+  margin-top: -30px;
+  margin-left: 1%;
+}
+/*------------------ setting font properties to deal(discount) price--------------------- */
+.left-slide .dealPrice{
+  font-weight: bold;
+  font-style: italic;
+  color:#fff;
+  font-size: 2em;
+}
+/*--------------------------- striking the actual price of products--------------------------- */
+.left-slide .strikePrice{
+  text-decoration: line-through;
+ 
+}
+
+/* ----------------------------adding properties to right slide container------------------------------- */
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+/* -----------------------setting up the background properties of all the divs in right slide---------- */
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+/* ---------------giving the basic structure to all the buttons under action-buttons class------------ */
+.action-buttons button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+/*---------------- adding hover & focus effect to buttons of action buttons class------------------ */
+.action-buttons button:hover {
+  color: #222;
+}
+
+.action-buttons button:focus {
+  outline: none;
+}
+
+/*-------------------------- giving position and z index to the buttons------------- */
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 1;
+}
+
+/*------------ setting the border radius ang giving the transform properties to both buttons------------- */
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/*------------------------------------------ End Of Hot Deal Section-------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************************Reviews**********************************************************/
+#reviews .container-rev{
+    width: 100%;
+    height: 70vh;
+    background: white;
+    position: relative;
+}
+#reviews .container-rev h1{
+    text-align: center;
+    margin-top: 1rem;
+    color: #5a5a5a;
+    font-size: 3rem;
+}
+#reviews .container-rev .veiw-box-rev{
+    width: 900px;
+    height: 600px;
+    border-radius: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;    
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev{
+    display: flex;
+    transition: 0.5s;
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+    width: 800px;
+    text-align: center;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    background: grey ;
+    border-radius: 200px;
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+#reviews .container-rev .veiw-box-rev #testimonials-rev .space{
+    margin: 0 70px;
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user img{
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #e8ecff;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+    font-size: 22px;
+    color: black;
+    line-height: 30px;
+    margin: 60px 0 30px;
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user p::before{
+    content: '\201C';
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -57;
+    margin-right: 10px;
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user p::after{
+    content: '\201D';
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -70;
+    margin-left: 32rem;
+}
+#reviews .container-rev .veiw-box-rev #testimonials-rev .user h3{
+    font-size: 26px;
+    color: #cbb4f5;
+}
+#reviews .container-rev .veiw-box-rev .controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#reviews .container-rev .veiw-box-rev .controls span{
+    width: 15px;
+    height: 15px;
+    background:grey ;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#reviews .container-rev .veiw-box-rev .controls .active{
+    width: 45px !important;
+}
+
+/********************************************About Us**************************************************/
+.aboutus{
+  background-color: white;
+  padding: 2rem;
+}
+.aboutus .outer div{
+  display: inline-block;
+}
+.aboutus .outer div h2{
+    color: #eb6e6e;
+}
+.aboutus #links span a{
+  font-size: 1.5rem;
+}
+.aboutus #links span a:hover{
+    color: #eb6e6e;
+}
+
+ /*-----------------------------------------Start of CSS Of Newsletter Section------------------------------------------------------------*/
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+          /*------------------------- giving different properties to newsletter section------------------- */
+          #newsletter{
+            background: url(Services/dd2.jpg);
+            background-size: 100% 100%;
+            height: 300px;
+            object-fit: cover;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /*------------------------- adding background to divs of newsletter section------------------- */
+        #newsletter div{
+            background: #fff;
+        }
+         /*------------------------- adding text properties to h1 of newsletter section------------------- */
+        #newsletter h1{
+            text-transform: uppercase;
+            color: crimson;
+        }
+  
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CSS of Subscribe Part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+         /*------------------------- giving different properties to subscribe part------------------- */
+        #subscribe{
+            width:35%;
+            height:82%;
+            text-align: center;
+            border-radius: 5%;
+        }
+        /*------------------------- giving different properties to subscribe button------------------ */
+        #subscribe input[type="submit"]{
+             max-width: 110px;
+             background: crimson;
+             color: #fff;
+             cursor: pointer;
+             font-size: 18px;
+             font-weight: 600;
+             letter-spacing: 1px;
+             transition: 0.5s;
+             border-radius: 9%;
+             border:none;
+         }
+        
+
+        /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CSS of Contact Us Part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+        /*------------------------- giving different properties to contact part------------------- */
+        #contact{
+            width:40%;
+            height:50%;
+            text-align: center;
+            border-radius: 5%;
+        }
+         /*------------- giving display properties to div with id follow--------- */
+         #follow{
+             margin-top: 6%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         /*------------- giving display properties to unordered list under follow div--------- */
+         #follow ul{
+             position: relative;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         /*---------------- giving properties to list elements under follow div ---------*/
+         #follow ul li{
+             position: relative;
+             list-style: none;
+             margin:0px 10px;
+             cursor: pointer;
+         }
+         #follow ul li a{
+             text-decoration: none;
+         }
+         /* ------------------setting the color and font size of icons------------- */
+         #follow ul li a i.fa{
+             font-size: 6em;
+             color:#222;
+         }
+         /*------------------------ adding content before list------------ */
+         #follow ul li::before{
+             font-family: fontAwesome;
+             position: absolute;
+             top: -20px;
+             left: 0;
+             font-size: 2.2em;
+             height: 0;
+             overflow: hidden;
+             transition: 0.5s ease-in-out;
+         }
+         /*--------------- adding twitter icon before first list element--------- */
+         #follow ul li:nth-child(1)::before{
+             content: '\f099';
+             color:#1da1f2;
+             border-bottom: 4px solid #1da1f2;
+         }
+         /*--------------- adding whatsapp icon before second list element--------- */
+         #follow ul li:nth-child(2)::before{
+             content: '\f232';
+             color:#25d366;
+             border-bottom: 4px solid #25d366;
+         }
+         /*--------------- adding youtube icon before third list element--------- */
+         #follow ul li:nth-child(3)::before{
+             content: '\f16a';
+             color:#ff0000;
+             border-bottom: 4px solid #ff0000;
+         }
+         /*--------------- adding instagram icon before 4th list element--------- */
+         #follow ul li:nth-child(4)::before{
+             content: '\f16d';
+             color:#E1306C;
+             border-bottom: 4px solid #E1306C;
+         }
+         /*--------------- adding facebook icon before 5th list element--------- */
+         #follow ul li:nth-child(5)::before{
+             content: '\f230';
+             color:#4267B2;
+             border-bottom: 4px solid #4267B2;
+         }
+         /*-------------------- setting the height of icons on hover-------------------------- */
+         #follow ul li:hover::before{
+             height: 50%;
+         }
+         
+
+         
+         /*------------ setting the margin of all the divs with class form-controls--------------- */
+         .form-controls-subscribe {
+             margin-bottom: 10px;
+             padding-bottom: 20px;
+             position: relative;
+         }
+         /* ----------------------giving different  properties to  input boxes of form-controls  ----------------- */
+         .form-controls-subscribe input {
+             border: 2px solid #f0f0f0;
+             border-radius: 4px;
+             display: block;
+             font-family: inherit;
+             font-size: 14px;
+             padding: 10px;
+             width: 100%;
+         }
+         /* --------------setting the color of input boxes when they are on focus--------- */
+         .form-controls-subscribe input:focus {
+             outline: 0;
+             border-color: #777;
+         }
+         /*----- setting the border color pf all input boxes when they have form-controls as well as success class---- */
+         .form-controls-subscribe.success input {
+             border-color: #2ecc71;
+         }
+         /*----- setting the border color pf all input boxes when they have form-controls as well as error class---- */
+         .form-controls-subscribe.error input {
+             border-color: #e74c3c;
+         }
+         /*------------ giving properties to icon of form-controls---------- */
+         .form-controls-subscribe i {
+             visibility: hidden;
+             position: absolute;
+             top: 10px;
+             right: 10px;
+         }
+         /*---------- setting color & visibility of check-circle icon ---------- */
+         .form-controls-subscribe.success i.fa-check-circle {
+             color: #2ecc71;
+             visibility: visible;
+         }
+         /*---------- setting color & visibility of exclamation-circle icon ---------- */
+         .form-controls-subscribe.error i.fa-exclamation-circle {
+             color: #e74c3c;
+             visibility: visible;
+         }
+         /*---------- giving properties to small tag of form-controls ---------- */
+         .form-controls-subscribe small {
+             color: #e74c3c;
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             visibility: hidden;
+         }
+         /* ------giving visibility to small tag when divs have error class-------- */
+         .form-controls-subscribe.error small {
+             visibility: visible;
+         }
+         
+/*----------------------------------------- End Of CSS of Newsletter Section---------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*-----------------------------------------Start of CSS Of Services Section------------------------------------------------------------*/
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+      /*------------------------- giving different properties to services section------------------- */
+      #services{
+        background: url(Services/9.jpg);
+        background-repeat: no-repeat;
+        object-fit:cover;
+        background-size: 100% 100%;
+        height:300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+     /*------------------------- giving different properties to serv1 div------------------- */
+    #serv1{
+       font-size: 50px;
+       margin-left: 1rem;
+       font-weight: bolder;
+       color:rgb(87, 87, 87);
+    }
+     /*------------------------- giving different properties to serv2 div------------------- */
+    #serv2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:crimson;
+        font-weight: 500;
+        font-size: 20px;
+    }
+     /*------------------------- giving different properties to serv2-1 div------------------- */
+    #serv2-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    /*------------------------- giving different properties to divs of serv2-1 div------------------- */
+    #serv2-1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     /*------------------------- giving different properties to  serv2-2 div------------------- */
+    #serv2-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;margin-top: 2%;
+    }
+      /*------------------------- giving different properties to divs of serv2-2 div------------------- */
+    #serv2-2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      /*------------------------- giving width image of serv2 div------------------- */
+    #serv2 img{
+        width:30%;
+        
+    }
+
+/*----------------------------------------- End Of CSS of Services Section---------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/**/
+.footer {
+  background-color: rgba(240, 113, 145, 0.911);
+  padding: 6rem 1rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+#logo_footer{
+    height:14rem;
+    width: 14rem;
+    margin: auto;
+    background: white;
+    margin-top: -10vh;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid rgba(240, 113, 145, 0.911);
+}
+#logo_footer img{
+    height:8rem;
+    width: 8rem;
+    position: absolute;
+    margin: 3rem;
+}
+.footer-center span {
+  margin-right: 1rem;
+}
+.footer-center .follow_icons {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #2d2d2d;
+}
+.footer-center .follow_icons li{
+    float: left;
+}
+.footer-center .follow_icons li i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: var(--white);
+}
+
+.footer-center a:link,
+.footer-center a:visited {
+  display: block;
+  color: #2d2d2d;
+  font-size: 1.4rem;
+  transition: 0.6s;
+}
+
+.footer-center a:hover {
+  color: darkgrey;
+}
+
+.footer-center div {
+  color: #f1f1f1;
+  font-size: 1.4rem;
+}
+
+.footer-center h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#last_footer #tag_line{
+    text-align: center;
+}
+@media only screen and (max-width: 998px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+/***********************************About Us Page**************************************/
+.about{
+    background-image: url(aboutus6.png);
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-info h3{
+    padding-top: 1rem;
+    text-align: center;
+    color: #eb6e6e;
+}
+.about-info p{
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+/********************************Cart Page*****************************************/
+.cart-info .remove_btn{
+    border-radius: 0.5rem;
+    background: #f14444;
+    color: white;
+}
+.cart-info .remove_btn:hover{
+    background: #ec1f1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+

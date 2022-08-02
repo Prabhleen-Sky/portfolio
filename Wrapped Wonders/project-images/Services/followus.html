@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+       <style>
+ /*-----------------------------------------Start of CSS Of Newsletter Section------------------------------------------------------------*/
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+          /*------------------------- giving different properties to newsletter section------------------- */
+           #newsletter{
+               background: url(dd2.jpg);
+               background-size: 100% 100%;
+               height: 300px;
+               object-fit: cover;
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+           }
+           /*------------------------- adding background to divs of newsletter section------------------- */
+           #newsletter div{
+               background: #fff;
+           }
+            /*------------------------- adding text properties to h1 of newsletter section------------------- */
+           #newsletter h1{
+               text-transform: uppercase;
+               color: crimson;
+           }
+     
+       /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CSS of Subscribe Part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+            /*------------------------- giving different properties to subscribe part------------------- */
+           #subscribe{
+               width:35%;
+               height:82%;
+               text-align: center;
+               border-radius: 5%;
+           }
+           /*------------------------- giving different properties to subscribe button------------------ */
+           #subscribe input[type="submit"]{
+                max-width: 100px;
+                background: crimson;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                transition: 0.5s;
+                border-radius: 9%;
+                border:none;
+            }
+           
+
+           /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CSS of Contact Us Part>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+           /*------------------------- giving different properties to contact part------------------- */
+           #contact{
+               width:40%;
+               height:50%;
+               text-align: center;
+               border-radius: 5%;
+           }
+
+
+            /*------------- giving display properties to div with id follow--------- */
+            #follow{
+                margin-top: 6%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+            /*------------- giving display properties to unordered list under follow div--------- */
+            #follow ul{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*---------------- giving properties to list elements under follow div ---------*/
+            #follow ul li{
+                position: relative;
+                list-style: none;
+                margin:0 10px;
+                cursor: pointer;
+            }
+
+
+            #follow ul li a{
+                text-decoration: none;
+            }
+
+            /* ------------------setting the color and font size of icons------------- */
+            #follow ul li a .fa{
+                font-size: 6em;
+                color:#222;
+            }
+
+            /*------------------------ adding content before list------------ */
+            #follow ul li::before{
+                font-family: fontAwesome;
+                position: absolute;
+                top: -20px;
+                left: 0;
+                font-size: 3em;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s ease-in-out;
+            }
+
+            /*--------------- adding twitter icon before first list element--------- */
+            #follow ul li:nth-child(1)::before{
+                content: '\f099';
+                color:#1da1f2;
+                border-bottom: 4px solid #1da1f2;
+            }
+            /*--------------- adding whatsapp icon before second list element--------- */
+            #follow ul li:nth-child(2)::before{
+                content: '\f232';
+                color:#25d366;
+                border-bottom: 4px solid #25d366;
+            }
+            /*--------------- adding youtube icon before third list element--------- */
+            #follow ul li:nth-child(3)::before{
+                content: '\f16a';
+                color:#ff0000;
+                border-bottom: 4px solid #ff0000;
+            }
+            /*--------------- adding instagram icon before 4th list element--------- */
+            #follow ul li:nth-child(4)::before{
+                content: '\f16d';
+                color:#E1306C;
+                border-bottom: 4px solid #E1306C;
+            }
+            /*--------------- adding facebook icon before 5th list element--------- */
+            #follow ul li:nth-child(5)::before{
+                content: '\f230';
+                color:#4267B2;
+                border-bottom: 4px solid #4267B2;
+            }
+            /*-------------------- setting the height of icons on hover-------------------------- */
+            #follow ul li:hover::before{
+                height: 70%;
+            }
+            
+
+            
+            /*------------ setting the margin of all the divs with class form-controls--------------- */
+            .form-controls-subscribe {
+                margin-bottom: 10px;
+                padding-bottom: 20px;
+                position: relative;
+            }
+            /* ----------------------giving different  properties to  input boxes of form-controls  ----------------- */
+            .form-controls-subscribe input {
+                border: 2px solid #f0f0f0;
+                border-radius: 4px;
+                display: block;
+                font-family: inherit;
+                font-size: 14px;
+                padding: 10px;
+                width: 100%;
+            }
+            /* --------------setting the color of input boxes when they are on focus--------- */
+            .form-controls-subscribe input:focus {
+                outline: 0;
+                border-color: #777;
+            }
+            /*----- setting the border color pf all input boxes when they have form-controls as well as success class---- */
+            .form-controls-subscribe.success input {
+                border-color: #2ecc71;
+            }
+            /*----- setting the border color pf all input boxes when they have form-controls as well as error class---- */
+            .form-controls-subscribe.error input {
+                border-color: #e74c3c;
+            }
+            /*------------ giving properties to icon of form-controls---------- */
+            .form-controls-subscribe i {
+                visibility: hidden;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            /*---------- setting color & visibility of check-circle icon ---------- */
+            .form-controls-subscribe.success i.fa-check-circle {
+                color: #2ecc71;
+                visibility: visible;
+            }
+            /*---------- setting color & visibility of exclamation-circle icon ---------- */
+            .form-controls-subscribe.error i.fa-exclamation-circle {
+                color: #e74c3c;
+                visibility: visible;
+            }
+            /*---------- giving properties to small tag of form-controls ---------- */
+            .form-controls-subscribe small {
+                color: #e74c3c;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+            }
+            /* ------giving visibility to small tag when divs have error class-------- */
+            .form-controls-subscribe.error small {
+                visibility: visible;
+            }
+            
+/*----------------------------------------- End Of CSS of Newsletter Section---------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+       </style>
+    </head>
+    <body>
+<!--------------------------------------------------------- Start of Newsletter Section----------------------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <section id='newsletter'>
+           <!---------------------------------------- start of subscribe part-------------------------------------------------- -->
+             <div id='subscribe'>
+                  <h1>Subscribe</h1>
+                  <p>For More Updates & Offers!</p>
+                  <div class="form-controls-subscribe">
+                    <input type="email" name="" placeholder="Email Address" id='email-subscribe'>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <span id='outputSub'> </span>
+                <input type="submit" name="" value="Subscribe" id="subBtn" onclick="checkEmail()">
+                
+             </div>
+            <!---------------------------------------- end of subscribe part-------------------------------------------------- -->
+
+            <!---------------------------------------- start of contact part-------------------------------------------------- -->
+             <div id='contact'>
+                  <h1>Connect with us</h1>
+                  <div id='follow'>
+                    <ul>
+                        <li><a href='#'><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href='#'><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li><a href='#'><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href='#'><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!---------------------------------------- end of contact part-------------------------------------------------- -->
+          
+        </section>
+<!--------------------------------------------------------- End of Newsletter Section----------------------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <script>
+// ----------------------------------------Start of Script of Newsletter Section------------------------------------------------------
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    // ---------------------   Validation Part Of Email-------------------
+            const emailSub = document.getElementById('email-subscribe');
+            var outputSub = document.getElementById('outputSub');
+            
+            function checkEmail(){
+                const emailSubValue = emailSub.value.trim();
+                let verify=true;
+                if(emailSubValue === '') {
+                    setErrorFor(emailSub, 'Email cannot be blank');
+                    outputSub.innerHTML=" ";
+                    verify=false;
+                } else if (!isEmail(emailSubValue)) {
+                    setErrorFor(emailSub, 'Not a valid email');
+                    outputSub.innerHTML=" ";
+                    verify=false;
+                } else {
+                    setSuccessFor(emailSub);
+                    outputSub.innerHTML=" ";
+                }
+
+                if(verify){
+                    outputSub.innerHTML = "Congratulations!!! Your Newsletter Subscription has been Activated</p> ";       
+                    emailSub.value = " ";
+                    b =  document.querySelectorAll(".form-controls-subscribe");
+                    b.forEach((container) => container.classList.remove("success"));
+                }
+
+             }
+             function isEmail(emailSub) {
+                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailSub);
+            }
+            // Below is the setErrorFor function which we have used in validations for both login & sign Up form
+            // it will get the type of input & message as input & then get the parent element of that input value
+            // in html part, we have created a small tag below the input..it will select that small tag
+            // then will change the class of parent element from form-controls to form-controls error
+            //  form-controls error class will display the red cross icon & also the red border
+            // and in small tag the error msg will got displayed
+
+            function setErrorFor(input, message) {
+                const formControl = input.parentElement;
+                const small = formControl.querySelector('small');
+                formControl.className = 'form-controls-subscribe error';
+                small.innerText = message;
+            }
+
+            // Below is the setSuccessrFor function which we have used in validations for both login & sign Up form
+            // it will get the type of input & message as input & then get the parent element of that input value
+            // in html part, we have created a small tag below the input..it will select that small tag
+            // then will change the class of parent element from form-controls to form-controls success
+            //  form-controls success class will display the green check icon & also the green border
+            // and in small tag the error msg will got displayed
+
+            function setSuccessFor(input) {
+                const formControl = input.parentElement;
+                formControl.className = 'form-controls-subscribe success';
+            }
+// ----------------------------------------End of Script of Newsletter Section------------------------------------------------------
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+
+.header-active{
+    background: #333;
+    height: 6rem;
+    box-shadow:.2rem 0 .5rem #000;}
+
+ .header-active nav ul{
+            margin:0;
+        }			
+	
+	
+
+
+#special{
+	background: #000;
+	min-height: 100vh;
+}
+	
+.heading h1{
+			font-size: 4rem;
+			color: #000;
+			padding-top: 7rem;
+			margin-bottom: 2rem;
+			color: #fff;
+			text-align:center;
+		}
+
+.heading h1 span{
+		color:yellow;
+		}
+	
+  
+.card-container{
+		width:95%;
+		margin:6rem auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap; 
+}
+	    
+ .card-container  .card {
+			height: 25rem;
+			width: 20rem;
+			background: #fff;
+			padding: 1rem;
+			margin:2rem;
+			text-align: center;
+ }
+			
+.card img{
+				height: 50%;
+				width: 100%;
+				object-fit: cover;
+			}
+			
+.card	p{
+				font-size: 1.4rem;
+				margin: 2rem 0;
+			}	
+			
+  .card     button{
+	             border-radius:10%;
+				 height: 3.5rem;
+				 width: 14rem;
+				 background: #333;
+	             color: #fff;
+				 font-size: 1.4rem;
+				 }
+
+				 
+.card button:hover{
+				 color:#333;
+				  background: yellow;
+				 }
+					
+				
+		

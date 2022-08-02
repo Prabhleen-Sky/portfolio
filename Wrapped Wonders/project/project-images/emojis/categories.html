@@ -1,0 +1,203 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href='stylee.css'>    
+	<meta charset = 'UTF-8'>
+    <title>categories</title>
+	
+	<!--google font linking-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	
+	<!---bootstrap cdn linking--->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   
+   <br><br><br><br><br>
+<section class='mh-portfolio' id='mh-portfolio'>
+    <div class='container'>
+        <div class='row'>
+            <div class='section-title col-sm-12'>
+                <h3>Explore By Catergories</h3>
+            </div>
+            <br><br><br><br><br>
+            <div class='part col-sm-12'>
+                <div class='portfolio-nav col-sm-12' id='filter-button'>
+                    <ul>
+                        <li data-filter='*' class='current'>
+                            <span>All Categories</span>
+                        </li>
+
+                        <li data-filter='.user-interface' class='current'>
+                            <span>Birthdays</span>
+                        </li>
+
+                        <li data-filter='.branding'>
+                            <span>Anniversary</span>
+                        </li>
+
+                        <li data-filter='.mockup'>
+                            <span>New Arrivals</span>
+                        </li>
+                     </ul>   
+                </div>
+
+
+                <div class='mh-project-gallery col-sm-12' id='project-gallery'>
+                    <div class='portfolioContainer row'>
+                         <div class='grid-item col-md-4 user-interface'>
+                            <figure>
+                                 <img src='635a8d01abd4a0459732a58254091ff2.jpg' alt=''>
+								
+								 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>
+
+           
+                         <div class='grid-item col-md-4 ui mockup'>
+                            <figure>
+                                 <img src='emoji-1.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>  
+
+
+                         <div class='grid-item col-md-4 user-interface'>
+                            <figure>
+                                 <img src='emoji-2.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>  
+
+                         <div class='grid-item col-md-4 branding'>
+                            <figure>
+                                 <img src='emoji-3' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>  
+
+                         <div class='grid-item col-md-4 user-interface'>
+                            <figure>
+                                 <img src='emoji-4.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>  
+
+                         <div class='grid-item col-md-4 branding'>
+                            <figure>
+                                 <img src='emoji-5.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div> 
+
+                         <div class='grid-item col-md-4 user-interface'>
+                            <figure>
+                                 <img src='d83844c9e16c1e53a5edcbd782a394de.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div>   
+
+                         <div class='grid-item col-md-4 branding'>
+                            <figure>
+                                 <img src='0efdc0dba8b497c63c135cea13365785.jpg' alt=''>
+                                 <figcaption class='fig-caption'>
+                                    <i class='fa fa-search'></i>
+                                    <h5 class='title'>BUY NOW</h5>
+                                    <span class='sub-title'>ADD TO CART</span>
+                                 </figcaption>   
+                            </figure>
+                         </div> 
+
+                    </div>
+                </div>       
+         </div>
+    </div>        
+</section> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<script>
+      
+	   $(window).on("load", function(){
+	        var $container = $('.portfolioContainer');
+			$container.isotope({
+			    filter: '*',
+				animationOptions: {
+				    queue: true
+				}
+            });				
+	   
+	   
+	   
+	        $('.portfolio-nav li').click(function(){
+	            $('.portfolio-nav .current').removeClass('current');
+		        $(this).addClass('current');
+		        var selector = $(this).attr('data-filter');
+		        $container.isotope({
+		            filter: selector,
+			        animationOptions: {
+		               queue: true
+			        }   
+	            });
+                return false;
+	        });  
+  
+           $("#portfolio-item").mixItUp();
+         });  
+   	 
+       
+	 
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

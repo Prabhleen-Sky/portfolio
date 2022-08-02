@@ -1,0 +1,941 @@
+@media (max-width: 600px) {
+    .home_black_version {background: red;}
+        .coupons {
+            width: 40%;
+            margin-top: 1%;
+            margin-bottom: 20px;
+        }
+        .offerbtn{
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 270px;
+        margin-bottom: 0%;
+       }
+       .product_title{
+        margin-top: 600px;
+        text-align: center;
+        }
+        /*men, women, kids, unisex products*/
+        .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+            margin-left: 4rem;
+        }
+        .cakes_uni div{
+            position: absolute;
+            left: 0%;
+        }
+        .carousel{
+            margin-top: 4rem;
+        }
+        .header_top, .header_middle, .header_bottom{
+            display:none;
+        }
+        #header{
+            background: #f19898;
+            height: 4rem;
+            display: block;
+        }
+        #header .logo_gift img{
+            display: block;
+        }
+        #header nav {
+            position: fixed;
+            top: 0;
+            left: -120%;
+            height: 100vh;
+            width: 30rem;
+            background: lightgrey;
+          }
+          #header nav ul {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                    flex-flow: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            height: 100%;
+          }
+          #header nav ul li {
+            margin: 2rem 0;
+          }
+          #header nav ul li a {
+            font-size: 2rem;
+            border-radius: 5rem;
+          }
+          #header nav ul li a:hover {
+            padding: .5rem 5rem;
+            color: #333;
+            background: #f19898;
+          }
+          #header .nav-toggle {
+            left: 0%;
+          }
+          .about{
+            display: none;  
+          }
+          .about-info h3{
+            margin-top: 4rem;
+        }
+		   /* hot deals */
+        #hotDeals  .slider-container .left-slide h1{
+                font-size: 30px;
+                margin-left: 29%;
+        }
+        #hotDeals  .slider-container .left-slide h3 .dealPrice{
+            font-size: 30px;
+            margin-left: 5%;
+        }
+        #hotDeals  .slider-container .left-slide h4 .strikePrice{
+            font-size: 20px;
+            margin-left: 29%;
+        }
+        #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+            font-size: 20px;
+            margin-left: 20%;
+        }
+        /* newsletter */
+        #newsletter #subscribe{
+            margin-left:4%;
+        }
+        #newsletter #subscribe h1{
+            font-size:35px;
+        }
+       #newsletter #follow ul{
+            position: relative;
+        }
+        /*---------------- giving properties to list elements under follow div ---------*/
+       #newsletter #follow ul li{
+            position: relative;
+            list-style: none;
+            margin:0;
+            cursor: pointer;
+            padding:0;
+        }
+        #newsletter #follow ul li a .fa{
+            font-size: 3em;
+            padding:0;
+            margin:0;
+            color:#222;
+        }
+        #follow ul li:hover::before{
+            height: 90%;
+        }
+       
+
+        /* review */
+        #reviews .container-rev h1{
+            margin-left:10%;
+            font-size:35px;
+        }
+         
+        #reviews .container-rev .veiw-box-rev{
+                width: 550px;   
+                height: 600px;
+                border-radius: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;  
+        }
+        
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+            width: 450px;
+            height:280px;
+            margin-top:9%;
+            margin-left: 50px;
+            text-align: center;
+            padding: 20px 70px;
+            box-sizing: border-box;
+            border-radius: 200px;
+            box-shadow: 0 10px 20px -5px #00000061;
+            position: relative;
+        }
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+            font-size: 18px;
+            line-height: 18px;
+            margin: 30px 0 30px;
+        }
+
+        #reviews .container-rev .veiw-box-rev #testimonials-rev   .user p::after{
+            content:" ";
+        }
+
+        #reviews .container-rev .veiw-box-rev .controls{
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+      /* Services */
+       #services #serv1 h1{
+            font-size: 25px;
+            font-weight: bolder;
+            color:rgb(87, 87, 87);
+            margin-left: 10%;
+         }
+
+         #services #serv2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:crimson;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+    }
+    
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) and (max-width: 768px) {
+    .home_black_version{background: green;}
+    .coupons {
+        width: 40%;
+        margin-top: 1%;
+        margin-bottom: 20px;
+    }
+    .offerbtn{
+    width: 100%;
+    height: 14%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 250px;
+    margin-bottom: 0%;
+    }
+    .product_title{
+        margin-top: 600px;
+        text-align: center;
+    }
+     /*men, women, kids, unisex products*/
+     .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+        margin-left: 8rem;
+    }
+    .cakes_uni div{
+        position: absolute;
+        left: 0%;
+    }
+    .carousel{
+        margin-top: 4rem;
+    }
+    .header_top, .header_middle, .header_bottom{
+        display:none;
+    }
+    #header{
+        background: #f19898;
+        height: 4rem;
+        display: block;
+    }
+    #header .logo_gift img{
+        display: block;
+    }
+    #header nav {
+        position: fixed;
+        top: 0;
+        left: -120%;
+        height: 100vh;
+        width: 35rem;
+        background: lightgrey;
+      }
+      #header nav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 100%;
+      }
+      #header nav ul li {
+        margin: 2rem 0;
+      }
+      #header nav ul li a {
+        font-size: 3.5rem;
+        border-radius: 5rem;
+      }
+      #header nav ul li a:hover {
+        padding: .5rem 5rem;
+        color: #333;
+        background: #f19898;
+      }
+      #header .nav-toggle {
+        left: 0%;
+      }
+      .about{
+        display: none;  
+      }
+      .about-info h3{
+        margin-top: 4rem;
+    }
+	/* hot deals */
+    #hotDeals  .slider-container .left-slide h1{
+        font-size: 30px;
+        margin-left: 29%;
+    }
+    #hotDeals  .slider-container .left-slide h3 .dealPrice{
+        font-size: 30px;
+        margin-left: 5%;
+    }
+    #hotDeals  .slider-container .left-slide h4 .strikePrice{
+        font-size: 20px;
+        margin-left: 29%;
+    }
+    #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    /* newsletter */
+    #newsletter #subscribe{
+        margin-left:4%;
+    }
+    #newsletter #subscribe h1{
+        font-size:35px;
+    }
+   #newsletter #follow ul{
+        position: relative;
+    }
+    /*---------------- giving properties to list elements under follow div ---------*/
+   #newsletter #follow ul li{
+        position: relative;
+        list-style: none;
+        margin:0;
+        cursor: pointer;
+        padding:0;
+    }
+    #newsletter #follow ul li a .fa{
+        font-size: 3em;
+        padding:0;
+        margin:0;
+        color:#222;
+    }
+    #follow ul li:hover::before{
+        height: 90%;
+    }
+
+
+    
+        /* review */
+        #reviews .container-rev h1{
+            margin-left:8%;
+            font-size:45px;
+        }
+        
+        #reviews .container-rev .veiw-box-rev{
+            width: 700px; 
+            height: 650px;
+                border-radius: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;       
+        }
+
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+            width: 450px;
+            height:280px;
+            margin-top:6%;
+            margin-left: 52px;
+            text-align: center;
+            padding: 20px 70px;
+            box-sizing: border-box;
+            border-radius: 200px;
+            box-shadow: 0 10px 20px -5px #00000061;
+            position: relative;
+        }
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+            font-size: 20px;
+            line-height: 20px;
+            margin: 30px 0 30px;
+        }
+
+        #reviews .container-rev .veiw-box-rev #testimonials-rev   .user p::after{
+            content:" ";
+        }
+
+        #reviews .container-rev .veiw-box-rev .controls{
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Services */
+       #services #serv1 h1{
+        font-size: 28px;
+        font-weight: bolder;
+        color:rgb(87, 87, 87);
+        margin-left: 8%;
+     }
+
+     #services #serv2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:crimson;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px){
+    .home_black_version{background: blue;}
+    .coupons {
+        width: 40%;
+        margin-top: 1%;
+        margin-bottom: 20px;
+    }
+    .offerbtn{
+    width: 100%;
+    height: 16%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 90%;
+    margin-bottom: 0%;
+    }
+    .product_title{
+        margin-top: 600px;
+        text-align: center;
+    }
+    /*men, women, kids, unisex products*/
+    .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+        margin-left: 13rem;
+    }
+    .cakes_uni div{
+        position: absolute;
+        left: 0%;
+    }
+    .carousel{
+        margin-top: 4rem;
+    }
+    .header_top, .header_middle, .header_bottom{
+        display:none;
+    }
+    #header{
+        background: #f19898;
+        height: 4rem;
+        display: block;
+    }
+    #header .logo_gift img{
+        display: block;
+    }
+    #header nav {
+        position: fixed;
+        top: 0;
+        left: -120%;
+        height: 100vh;
+        width: 35rem;
+        background: lightgrey;
+      }
+      #header nav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 100%;
+      }
+      #header nav ul li {
+        margin: 2rem 0;
+      }
+      #header nav ul li a {
+        font-size: 3.5rem;
+        border-radius: 5rem;
+      }
+      #header nav ul li a:hover {
+        padding: .5rem 5rem;
+        color: #333;
+        background: #f19898;
+      }
+      #header .nav-toggle {
+        left: 0%;
+      }
+      .about{
+        display: none;  
+      }
+      .about-info h3{
+          margin-top: 4rem;
+      }
+	  /* hot deals */
+    #hotDeals  .slider-container .left-slide h1{
+        font-size: 30px;
+        margin-left: 22%;
+    }
+    #hotDeals  .slider-container .left-slide h3 .dealPrice{
+        font-size: 30px;
+        margin-left: 3%;
+    }
+    #hotDeals  .slider-container .left-slide h4 .strikePrice{
+        font-size: 20px;
+        margin-left: 29%;
+    }
+    #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    /* newsletter */
+    #newsletter #subscribe{
+        margin-left:4%;
+    }
+    #newsletter #subscribe h1{
+        font-size:45px;
+    }
+   #newsletter #follow ul{
+        position: relative;
+    }
+    /*---------------- giving properties to list elements under follow div ---------*/
+   #newsletter #follow ul li{
+        position: relative;
+        list-style: none;
+        margin:0 4px;
+        cursor: pointer;
+        padding:0;
+    }
+    #newsletter #follow ul li a .fa{
+        font-size: 4em;
+        padding:0;
+        margin:0;
+        color:#222;
+    }
+    #follow ul li:hover::before{
+        height: 75%;
+    }
+
+       /* review */
+       #reviews .container-rev h1{
+        margin-left:8%;
+        font-size:55px;
+    }
+    
+    #reviews .container-rev .veiw-box-rev{
+            width: 100%; 
+            height: 700px;
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;       
+    }
+
+    #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+        width: 535px;
+        height:320px;
+        margin-top:8%;
+        margin-left: 100px;
+        text-align: center;
+        padding: 20px 70px;
+        box-sizing: border-box;
+        border-radius: 200px;
+        box-shadow: 0 10px 20px -5px #00000061;
+        position: relative;
+    }
+    #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+        font-size: 22px;
+        line-height: 22px;
+        margin: 30px 0 30px;
+    }
+
+    #reviews .container-rev .veiw-box-rev #testimonials-rev   .user p::after{
+        content:" ";
+    }
+
+    #reviews .container-rev .veiw-box-rev .controls{
+        display: flex;
+        position: absolute;
+        bottom: 8%;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+  } 
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1080px){
+    .home_black_version {background: black;}
+    .coupons {
+        width: 30%;
+        margin-top: 1%;
+        margin-bottom: 20px;
+    }
+    .offerbtn{
+    width: 100%;
+    height: 16%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 90%;
+    margin-bottom: 0%;
+    }
+    .product_title{
+        margin-top: 300px;
+        text-align: center;
+    }
+    /*men, women, kids, unisex products*/
+    .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+        margin-left: 8rem;
+    }
+    .cakes_uni div{
+        position: absolute;
+        left: 0%;
+    }
+	/* hot deals */
+    #hotDeals  .slider-container .left-slide h1{
+        font-size: 32px;
+        margin-left: 7%;
+    }
+    #hotDeals  .slider-container .left-slide h3 .dealPrice{
+        font-size: 30px;
+        margin-left: 5%;
+    }
+    #hotDeals  .slider-container .left-slide h4 .strikePrice{
+        font-size: 20px;
+        margin-left: 29%;
+    }
+    #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+        font-size: 20px;
+        margin-left: 20%;
+    }
+
+    /* newsletter */
+    #newsletter #subscribe{
+        margin-left:4%;
+    }
+    #newsletter #subscribe h1{
+        font-size:47px;
+    }
+   #newsletter #follow ul{
+        position: relative;
+    }
+    /*---------------- giving properties to list elements under follow div ---------*/
+   #newsletter #follow ul li{
+        position: relative;
+        list-style: none;
+        margin:2px 5px;
+        cursor: pointer;
+        padding:0;
+    }
+    #newsletter #follow ul li a .fa{
+        font-size: 4em;
+        padding:0;
+        margin:0;
+        color:#222;
+    }
+    #follow ul li:hover::before{
+        height: 70%;
+    }
+
+       /* review */
+       #reviews .container-rev h1{
+        margin-left:8%;
+        font-size:55px;
+    }
+    
+    #reviews .container-rev .veiw-box-rev{
+            width: 100%; 
+            height: 700px;
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;       
+    }
+
+    #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+        width: 600px;
+        height:290px;
+        margin-top:9%;
+        margin-left: 50px;
+        text-align: center;
+        padding: 20px 70px;
+        box-sizing: border-box;
+        border-radius: 200px;
+        box-shadow: 0 10px 20px -5px #00000061;
+        position: relative;
+    }
+    #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+        font-size: 25px;
+        line-height: 25px;
+        margin: 30px 0 30px;
+    }
+
+    #reviews .container-rev .veiw-box-rev #testimonials-rev   .user p::after{
+        content:" ";
+    }
+
+    #reviews .container-rev .veiw-box-rev .controls{
+        display: flex;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    } 
+  @media (min-width: 1080px) and (max-width: 1200px){
+    .home_black_version{background: orange;}
+        .offerbtn{
+        width: 100%;
+        height: 16%;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 140%;
+        }
+
+        .coupons{
+        width:15%;
+        height:70%;
+        text-align: center;
+        padding-top: 1%;
+        font-size: 2em;
+        }
+
+         /*men, women, kids, unisex products*/
+    .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+        margin-left: 10rem;
+    }
+    .cakes_uni div{
+        position: absolute;
+        left: 0%;
+    }
+	
+	  /* hot deals */
+        #hotDeals  .slider-container .left-slide h1{
+            font-size: 35px;
+            margin-left: 7%;
+        }
+        #hotDeals  .slider-container .left-slide h3 .dealPrice{
+            font-size: 33px;
+            margin-left: 5%;
+        }
+        #hotDeals  .slider-container .left-slide h4 .strikePrice{
+            font-size: 20px;
+            margin-left: 29%;
+        }
+        #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+            font-size: 20px;
+            margin-left: 20%;
+        }
+
+         /* newsletter */
+    #newsletter #subscribe{
+        margin-left:4%;
+    }
+    #newsletter #subscribe h1{
+        font-size:47px;
+    }
+   #newsletter #follow ul{
+        position: relative;
+    }
+    /*---------------- giving properties to list elements under follow div ---------*/
+   #newsletter #follow ul li{
+        position: relative;
+        list-style: none;
+        margin:2px 8px;
+        cursor: pointer;
+        padding:0;
+    }
+    #newsletter #follow ul li a .fa{
+        font-size: 5em;
+        padding:0;
+        margin:0;
+        color:#222;
+    }
+    #follow ul li:hover::before{
+        height: 70%;
+    }
+
+          /* review */
+          #reviews .container-rev h1{
+            margin-left:8%;
+            font-size:60px;
+        }
+        
+        #reviews .container-rev .veiw-box-rev{
+                width: 100%px; 
+                height: 700px;
+                border-radius: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;       
+        }
+    
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+            width: 600px;
+            height:290px;
+            margin-top:5%;
+            margin-left: 50px;
+            text-align: center;
+            padding: 20px 70px;
+            box-sizing: border-box;
+            border-radius: 200px;
+            box-shadow: 0 10px 20px -5px #00000061;
+            position: relative;
+        }
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+            font-size: 25px;
+            line-height: 25px;
+            margin: 30px 0 30px;
+        }
+    
+        #reviews .container-rev .veiw-box-rev #testimonials-rev   .user p::after{
+            content:" ";
+        }
+    
+        #reviews .container-rev .veiw-box-rev .controls{
+            display: flex;
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .home_black_version{background: pink;}
+        .offerbtn{
+        width: 100%;
+        height: 22%;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 95%;
+        }
+
+        .coupons{
+        width:15%;
+        height:70%;
+        text-align: center;
+        padding-top: 1%;
+        font-size: 2em;
+        }
+        .products_collection_men,.products_collection_women,.products_collection_kids,.products_collection_unisex{
+            margin-left: 0;
+        }
+        .cakes_uni div{
+            position: absolute;
+            left: 0%;
+        }
+       
+	     /* hot deals */
+        #hotDeals  .slider-container .left-slide h1{
+            font-size: 3em;
+            margin-left: 0;
+        }
+        #hotDeals  .slider-container .left-slide h3 .dealPrice{
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+            margin-top:1%;
+            margin-bottom: 2%;
+        }
+        #hotDeals  .slider-container .left-slide h4 .strikePrice{
+            font-size: 2em;
+            margin-left: 29%;
+            font-weight: lighter;
+        }
+        #hotDeals  .slider-container .left-slide h4  span:nth-child(2){
+            font-size: 2em;
+            margin-left: 20%;
+            margin-top: 10%;
+            font-weight: lighter;
+        }
+        
+         /* newsletter */
+    #newsletter #subscribe{
+        margin-left:4%;
+    }
+    #newsletter #subscribe h1{
+        font-size:50px;
+    }
+   #newsletter #follow ul{
+        position: relative;
+    }
+    /*---------------- giving properties to list elements under follow div ---------*/
+   #newsletter #follow ul li{
+        position: relative;
+        list-style: none;
+        margin:0px 10px;
+        cursor: pointer;
+        
+    }
+    #newsletter #follow ul li a .fa{
+        font-size: 6em;
+        color:#222;
+    }
+    #follow ul li:hover::before{
+        height: 70%;
+    }
+
+          /* review */
+          #reviews .container-rev h1{
+            margin-left:8%;
+            font-size:70px;
+        }
+        
+        #reviews .container-rev .veiw-box-rev{
+            width: 100%;
+            height: 900px;
+            border-radius: 220px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;    
+        }
+    
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user{
+            width: 780px;
+            margin-top:5%;
+            margin-left: 70px;
+            text-align: center;
+            padding: 20px 70px;
+            box-sizing: border-box;
+            border-radius: 200px;
+            box-shadow: 0 10px 20px -5px #00000061;
+            position: relative;
+        }
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user p{
+            font-size: 25px;
+            line-height: 25px;
+            margin: 60px 0 30px;
+        }
+    
+        #reviews .container-rev .veiw-box-rev #testimonials-rev .user p::after{
+            content: '';
+        }
+    
+        #reviews .container-rev .veiw-box-rev .controls{
+            display: flex;
+            position: absolute;
+            bottom: 23%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+  }

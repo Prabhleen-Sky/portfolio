@@ -1,0 +1,264 @@
+/* ------------------------------------------------------Start of CSS of login section----------------------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/*------------ giving properties to login section-------- */
+#login{
+    position: relative;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px
+}
+/*------------ giving properties to container form-------- */
+#login .containerForm{
+    position: relative;
+    width: 800px;
+    height: 520px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+/*------------------- setting the position of login form----------------- */
+#login .containerForm .user{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/* ----------------------giving properties to login image div------------------ */
+#login .containerForm .user .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+/* ----------------------giving properties to login image ----------------- */
+#login .containerForm .user .imgBx img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+/* ----------------------giving different properties to login form box----------------- */
+#login .containerForm .user .formBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+/* ----------------------giving font properties to login form heading ----------------- */
+#login .containerForm .user .formBx form h2{
+    font-size: 20px;
+    font-weight: 600px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color:#555;
+}
+/* ----------------------giving differnt properties to login input boxes ----------------- */
+#login .containerForm .user .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+/* ----------------------giving differnt properties to login submit button ----------------- */
+#login .containerForm .user .formBx form input[type="submit"]{
+    max-width: 100px;
+    background: #ffcccb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+/* ----------------------giving differnt properties to login form's last line ----------------- */
+#login .containerForm .user .formBx form .signUp{
+    position: relative;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+/* ----------------------giving font properties to  a tag  ----------------- */
+#login .containerForm .user .formBx form .signUp a{
+    font-weight: 600;
+    text-decoration: none;
+    color:#f86663;
+}
+/* ----------------------giving differnt properties to sign up submit button ----------------- */
+#login .containerForm .signupBx .formBx form input[type="submit"]{
+    max-width: 100px;
+    background: #98AFC7;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#login .containerForm .signupBx .formBx form .signUp{
+    margin-top: 0;
+}
+/* ----------------------giving font properties to  a tag of sign up form----------------- */
+#login .containerForm .signupBx .formBx form .signUp a{
+    font-weight: 600;
+    text-decoration: none;
+    color:#6f9fd3;
+}
+
+#login .containerForm .signupBx{
+    pointer-events: none;
+}
+
+#login .containerForm.active .signupBx{
+    pointer-events: initial;
+}
+/* -------------------giving margin to signup & login form when they have active class and when they don't have active class ------------ */
+#login .containerForm  .signupBx .formBx{
+    left: 100%;
+}
+
+#login .containerForm.active  .signupBx .formBx{
+    left: 0;
+}
+
+#login .containerForm  .signupBx .imgBx{
+    left: -100%;
+}
+
+#login .containerForm.active  .signupBx .imgBx{
+    left: 0;
+}
+
+/*------------ setting the margin of all the divs with class form-controls--------------- */
+.form-controls {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+/* ----------------------giving different  properties to  input boxes of form-controls  ----------------- */
+.form-controls input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+/* --------------setting the color of input boxes when they are on focus--------- */
+.form-controls input:focus {
+	outline: 0;
+	border-color: #777;
+}
+/*----- setting the border color pf all input boxes when they have form-controls as well as success class---- */
+.form-controls.success input {
+	border-color: #2ecc71;
+}
+/*----- setting the border color pf all input boxes when they have form-controls as well as error class---- */
+.form-controls.error input {
+	border-color: #e74c3c;
+}
+/*------------ giving properties to icon of form-controls---------- */
+.form-controls i {
+	visibility: hidden;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+/*---------- setting color & visibility of check-circle icon ---------- */
+.form-controls.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+/*---------- setting color & visibility of exclamation-circle icon ---------- */
+.form-controls.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+/*---------- giving properties to small tag of form-controls ---------- */
+.form-controls small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+/* ------giving visibility to small tag when divs have error class-------- */
+.form-controls.error small {
+	visibility: visible;
+}
+/* -------------removing border of signup & login buttom-------- */
+#signUpBtn{
+    border:none;
+}
+
+#logInBtn{
+    border: none;
+}
+
+/* -----------------------------------------------------End of CSS of login section----------------------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* ------------------------------------------------------Start of CSS of Login & Sign In Modal-------------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* ----------------giving color to icon used in modal-body----------- */
+.modal-body i{
+    color: #2ecc71;
+    letter-spacing: 1px;
+}
+/* ----------------giving properties to modal-body----------- */
+.modal-body{
+   text-align:center;
+   font-size:2em;
+   border:none;
+}
+/* ----------------giving properties to modal-footer----------- */
+.modal-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:none;
+}
+/* ----------------giving color to p tag of footer of login modal----------- */
+.modal-footer p{
+  color:#f86663;
+}
+/* ----------------giving color to p tag of footer of signup modal----------- */
+#m2 .modal-footer p{
+    color:#6f9fd3;
+  }
+
+/* ------------------------------------------------------End of CSS of Login & Sign In Modal-------------------------------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+  

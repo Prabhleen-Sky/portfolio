@@ -1,0 +1,602 @@
+/* setting properties for all elements*/
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;   /* padding and border r included in width & height*/
+    text-decoration: none;      /* decoration to text like underline, overline , line-through etc.*/ 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80;
+    margin: auto;
+}
+
+/* -------------- navbar styling----------------- */
+.navbar{
+    position: fixed;
+    width : 100%;
+    padding: 15px 0;
+    background-color: rgba(0,0,0,.5);
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* giving properties to logo */
+.navbar .logo a{
+    color:rgb(203, 201, 197);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.navbar .logo a span{
+    color: rgba(126,185,215,255);
+}
+
+/* giving properties to list items */
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right:15px;
+}
+
+.navbar .menu li a{
+    color : rgb(203, 201, 197);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.navbar .menu li a span{
+    padding-left: 4px;;
+}
+
+.navbar .menu li a i{
+    font-size: 18px;
+    color:rgb(203, 201, 197);
+} 
+
+.navbar .menu li a:hover{ 
+    color:rgba(126,185,215,255);
+}
+
+.navbar .menu li a i:hover{ 
+    color:rgba(126,185,215,255);
+}
+
+
+
+
+/* ------------------------home section styling----------------------------------- */
+.home{
+    display: flex;
+    background: url("img/bg2.jpg");
+    height: 100vh;
+    color:rgb(203, 201, 197);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* .home .max-width{
+    margin: auto 0 auto 40px;
+} */
+
+.home .home-conten{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+/* setting the properties of different texts  */
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+/* name text  */
+.home .home-content .text-2{
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: -3px;
+    color:rgba(126,185,215,255);
+}
+
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color:rgba(132, 155, 169, 0.8);
+    font-weight: 400;
+}
+
+/*--------------------------------------- about section styling -------------------------- */
+section{
+    padding: 50px 0;
+    padding-bottom: 20px;
+}
+
+.about{
+    background-color:rgba(126,185,215,255);
+    font-family: 'kalam';
+}
+
+.about,.skills,.resume, .contact{
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 2%;
+    /* padding-bottom: 20px; */
+    text-align: center;
+    text-decoration: underline rgba(254, 255, 255, 0.8);
+    color: rgba(254, 255, 255, 0.8);
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .about-content .column{
+    width: 50%;
+}
+
+.about .about-content .left{
+    width: 45%;
+    margin-left: 5%;
+    color: rgba(15,11,16,255);
+    background-color: rgb(227, 236, 236);
+    padding: 2%;
+    border-radius: 7%;
+}
+
+.about .about-content .left:hover{
+    box-shadow: 7px 7px #333;
+}
+
+.about .about-content .left .text-hover:hover{
+    color: rgb(20, 133, 182);
+}
+
+
+.about .about-content .left h2{
+    background-color: rgb(227, 236, 236);
+    color:rgba(126,185,215,255);
+    padding: .5%;
+    font-size: 2em;
+    text-decoration:underline;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.about .about-content .left h2:hover{
+    color:#333;
+}
+
+/* .about .about-content .left .head-left{
+    color:rgba(169, 191, 203, 0.8);
+    font-size: 30px;
+} */
+
+.about .about-content .left p{
+    font-size: 17px;
+    
+}
+
+.about .about-content .left ul li{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    
+}
+
+/* .about .about-content .left ul li span{
+    color:rgba(254, 255, 255, 0.8);
+} */
+
+.about .about-content .right{
+    width: 40%;
+}
+
+.about .about-content .right img{
+    width: 50%;
+    height: 25%;
+    object-fit: cover;
+    margin-left: 12%;
+    border: none;
+    border-radius: 5%;
+}
+
+.about .about-content .right img:hover{
+    box-shadow: 7px 7px rgba(65, 64, 64,0.5);
+}
+
+/*----------------------------------- skills section styling ------------------------------------ */
+.skills{
+    background-color: rgb(32, 29, 29);
+    color: aliceblue;
+}
+
+.skills .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 3%;
+}
+
+.skills .title span{
+    color: rgba(126,185,215,255);
+}
+
+.skills .skills-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills .skills-content ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin: 3% 10%;
+    transition: 0.2s ease;
+}
+
+.skills .skills-content ul li img{
+    width: 100px;
+    height: 100px;
+}
+
+.skills .skills-content ul li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    /* width: 150px;
+    height: 150px; */
+}
+
+/* ------------------------------------project section styling------------------------------ */
+.project{
+    background-color: rgba(126,185,215,255);
+    color: aliceblue;
+    /* height: auto; */
+}
+
+.project .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 40px;
+   margin-bottom: 3%;
+}
+
+.project .title span{
+    color: #333;
+    font-weight: bold;
+}
+
+.project .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins',sans-serif;
+}
+
+.project .project-content .column{
+    width: 50%;
+}
+
+.project .project-content .left{
+    width: 45%;
+}
+
+.project .project-content .left .wrappedWonders{
+    width: 100%;
+    height: 100%;
+}
+
+.project .project-content .left .wrappedWonders a #project1{
+    width: 100%;
+    height: 100% ;
+}
+
+.project .project-content .right{
+    width:45%;
+    /* text-align: center; */
+}
+
+
+.project .project-content .right h3{
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+
+.project .project-content .right p,span{
+   font-weight: 550;
+}
+
+
+.project .project-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: flex-start;
+    font-size: 15px;
+    list-style-type: none;
+    /* margin-left: 30%; */
+}
+
+.project .project-content ul li{
+    width: 10%;
+    height: 7%;
+}
+
+
+.project .project-content .button{
+    height: 50px;
+    width: 200px;
+    padding: 6%;
+    /* margin-top: 2%; */
+}
+
+.project .project-content .button a{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(169, 191, 203, 0.8);
+    background: rgba(169, 191, 203, 0.8);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor:pointer;
+    padding: 5%;
+ }
+ 
+ .project .project-content .button a:hover{
+     color:#fff;
+     background: none;
+ }
+
+/*--------------------------------------- resume section styling-------------------------- */
+.education{
+    background-color: rgb(32, 29, 29);
+    color:  aliceblue;
+}
+
+.education .title{
+    text-align: center;
+    /* text-decoration: underline rgba(169, 191, 203, 0.8); */
+    color:  rgba(126,185,215,255);
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 40px;
+    margin-bottom: 3%;
+    
+}
+
+
+.education  .education-column{
+      margin-left: 23%;
+}
+
+
+.education  .education-content .education-item{
+    text-align: center;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px dotted rgba(126,185,215,255);
+    border-radius: 7px;
+    width: 70%;
+    padding: 3%;
+}
+
+
+/*-------------------------------------- contact section styling ------------------------------ */
+
+.contact{
+    background-color: rgba(126,185,215,255);
+    color:#333;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact .title{
+    text-align: center;
+    /* text-decoration: underline rgba(169, 191, 203, 0.8); */
+    font-size: 40px;
+    font-weight: 550;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+
+.contact .contact-content .column{
+    width:100%;
+}
+
+.contact .contact-content .left{
+    width: 45%;
+}
+
+.contact .contact-content .left .text{
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin:10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+      margin-left:30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:#333
+}
+
+.contact .contact-content .info .head{
+    font-weight: 550;    
+}
+
+.contact .contact-content .info .sub-title{
+    color:#333;
+}
+
+.contact .contact-content .right{
+    width: 45%;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.contact .right .text{
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.contact .right form .name{
+   margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-left: 10px;
+ }
+
+ .contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+ }
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border:1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact .right form .textarea textarea{
+   padding-top: 10px;
+   resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button{
+   width: 100%;
+   height: 100%;
+   border: 2px solid rgba(169, 191, 203, 0.8);
+   background: rgba(169, 191, 203, 0.8);
+   color: #fff;
+   font-size: 20px;
+   font-weight: 500;
+   border-radius: 6px;
+   cursor:pointer;
+}
+
+.contact .right form .button button:hover{
+    color:#fff;
+    background: none;
+}
+
+/* -----------------footer section styling-------------- */
+.footer{
+    background-color: rgb(32, 29, 29);
+    color: rgb(203, 201, 197);
+}
+
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .left{
+    width: 45%;
+}
+
+.footer .right{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .logo a{
+    color:rgb(203, 201, 197);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.footer .logo a span{
+    color: rgba(126,185,215,255);
+}
+
+.footer .right a i{
+    font-size: 30px;
+    color:rgb(203, 201, 197);
+} 

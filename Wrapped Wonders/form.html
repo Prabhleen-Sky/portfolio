@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WRAPPED WONDERS | LOGIN</title>  
+        <!--FAVICON-->
+        <link rel="shortcut icon" href="project-images/logo-site-name-favicon/favicon.ico" type="image/x-icon">
+        <!--CSS-->
+        <link rel="stylesheet" type='text/css' href="styling files/form.css">
+        <!--FONT-AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<!-----------------------------------------------Start Of Login Section ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <section id='login'>
+            <div class="containerForm" id="containerForm">
+     <!----------------------------- Log in form------------------------------>
+                <div class="user loginBx">
+                    <div class="imgBx">
+                        <img src="project-images/form-images/login2.jpg">
+                    </div>
+                    <div class="formBx">
+                        <form id='inForm'>
+                            <h2>Log In</h2>
+                            <div class="form-controls">
+                                <input type="text" name="" placeholder="Username" id='inName'>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-controls">
+                                <input type="password" name="" placeholder="Password" id='inPass'>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                                <br>
+                            </div>
+                            <input type="submit" name="" value="LogIn" id='logInBtn'>
+                            <p class="signUp">Don't have an account ? <a href="#"  onclick="toggleForm()">Sign Up.</a></p>
+                        </form>
+                    </div>
+                </div>
+        <!----------------------------- Sign Up form------------------------------>
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form id='form'>
+                            <h2>Create an Account</h2>
+
+                            <div class="form-controls">
+                                <input type="text" name="" placeholder="Username" id='username'>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            
+                            <div class="form-controls">
+                                <input type="email" name="" placeholder="Email Address" id='email'>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="form-controls">
+                                 <input type="password" name="" placeholder="Create Password" id='password'>
+                                 <i class="fas fa-check-circle"></i>
+                                 <i class="fas fa-exclamation-circle"></i><p>  </p><p></p><p></p>
+                                 <small>Error message</small>
+                            </div>
+
+                            <div class="form-controls">
+                                <input type="password" name="" placeholder="Confirm Password" id='password2'>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                           </div>
+
+                            <input type="submit" name="" value="Sign Up" id="signUpBtn">
+                            <p class="signUp">Already have an account ? <a href="#"  onclick="toggleForm()">Log In.</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx">
+                        <img src="project-images/form-images/login1.jpg">
+                    </div>
+                </div>
+            </div>
+</section>
+<!-----------------------------------------------End Of Login Section ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-----------------------------------------------Start Of Login Modal ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div class="modal" id="m1" >
+            <div class="modal-dialog">
+            
+              
+              <div class="modal-content">
+                <div class="modal-body">
+                <h2 class="modal-title">
+                     <i class="fas fa-check fa-2x"></i>
+                  </h2><br> 
+                  <p>Logged In Successfully!!</p>
+                </div>
+                <div class="modal-footer">
+                <p> Regards (WRAPPED WONDERS)</p>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+<!-----------------------------------------------End Of Login Modal ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-----------------------------------------------Start Of Sign Up Modal ----------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div class="modal" id="m2" >
+            <div class="modal-dialog">
+            
+              
+              <div class="modal-content">
+                <div class="modal-body">
+                <h2 class="modal-title">
+                     <i class="fas fa-check fa-2x"></i>
+                  </h2><br> 
+                  <p>Congratulations!!!</p>
+                  <p>You are now a member of wrapped wonders</p>
+                </div>
+                <div class="modal-footer">
+                <p> Regards (WRAPPED WONDERS)</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+        </div>      
+<!-----------------------------------------------End Of Sign Up Modal------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <script src='script files/form.js'></script>
+    </body>
+</html>

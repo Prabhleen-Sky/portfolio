@@ -1,0 +1,410 @@
+
+
+.container-fluid{
+   background-color:#262626;  
+}
+
+.section-title h3{
+ color:white;
+ font-family:'Poppins',san-serif;
+}
+
+.reviews-nav{
+ margin:0 auto;
+ /* margin-top: 50px; */
+ margin-bottom:50px;
+ text-align: center;
+}
+
+.reviews-nav ul{
+ margin:0 auto;
+ float:none;
+ text-align: center;
+} 
+
+.reviews-nav ul li{
+ display: inline-block;
+ margin:0 10px;
+ cursor:pointer;
+ color:white;
+ font-family:'Poppins',san-serif;
+} 
+
+.reviews-nav ul li:hover{
+ color:#0bceaf;
+} 
+
+.reviews-nav ul li.active{
+ color:#0bceaf;
+} 
+
+.reviews-nav ul li span{
+ padding: 15px 0;
+ border-bottom: 2px solid transparent;
+} 
+
+.reviews-nav ul li.current span{
+ border-bottom: 2px solid #0bceaf;
+ font-size: 20px;
+} 
+
+/* Cards */
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body{
+ margin:0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif !important;
+
+}
+
+section{
+ width: 100%;
+ height: 100vh;
+ /* padding: 180px 0 0; */
+ padding-top: 50px;
+ background: #262242; 
+
+}
+
+#slideshow{
+   width:100%;
+   height:50vh;
+   background:#262242;
+   display: flex;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   border-radius: 4%; 
+   /* overflow: hidden; */
+}
+
+#slideshow::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+ }
+
+ #slideshow::-webkit-scrollbar-track {
+   background: transparent;
+ }
+
+
+
+.slide-wrap > a{
+   display: inline-flex;
+   width: 1.5rem;
+   height: 1.5rem;
+   background: white;
+   text-decoration: none;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   margin: 0 0 0.5rem 0;
+   position: relative;
+}
+#lefta{
+   margin-left: 50rem;
+   text-decoration: none;
+}
+
+#lefta1{
+   text-decoration: none;
+}
+
+#lefta2{
+   text-decoration: none;
+}
+
+.abutton:hover{
+   background-color:lightgray;
+}
+
+
+.testimonials{
+   flex-shrink: 0;
+   height: 100%; 
+   scroll-behavior: smooth;
+
+}
+.testimonials div{
+   margin-left: 5%;
+   
+}
+
+.testimonials > div:target{
+   transform: scale(0.8);
+}
+
+
+
+.green img{
+  position: absolute;
+   /* top:9%;
+   left:2%;
+   padding-top: 4.5%; */
+   border-radius: 50%;
+   padding-top: 1%;
+   width:80px;
+   height: 80px;
+}
+
+.pink img{
+  position: absolute;
+   border-radius: 50%;
+   padding-top: 1%;
+   width:80px;
+   height: 80px;
+}
+
+.blue img{
+  position: absolute;
+   border-radius: 50%;
+   padding-top: 1%;
+   width:80px;
+   height: 80px;
+}
+
+
+
+
+.contentRev{
+   display: inline-block;
+   font-size: 2rem;
+   font-weight: 500px;
+   /* padding-top: 3.5%;
+   padding-left: 50%; */
+   padding-top: 2%;
+   color:white;
+   
+}
+
+.nameRev{
+   font-size: 2rem;
+   text-align: center;
+}
+
+ .contentRev:before{
+   content: '\f10d';
+   position: relative;
+   top: -7px;
+   left: 35%;
+   font-family: fontAwesome;
+   font-size: 60px;
+   color: rgba(255,255,255,.5);
+   transform: translateX(-50%);
+} 
+
+
+.green{
+   background: #3fc012 url(sparkles.png);
+   animation: animate 2s linear infinite;
+   display: flex;
+   /* overflow: hidden; */
+}
+
+
+
+.pink{
+   background: #f1206a url(sparkles.png);
+   animation: animate 2s linear infinite;
+   overflow: hidden;
+}
+
+.blue{
+   background: #0f8484 url(sparkles.png);
+   animation: animate 2s linear infinite;
+   overflow: hidden;
+}
+
+@keyframes animate{
+   0%{
+     background-position: 0 0 ;
+   }
+   100%{
+    background-position: 0 -64px;
+   }
+}
+
+
+
+
+/* --------------------------------Feedback Form ----------------------------------------------------------- */
+.feedback{
+  background: linear-gradient(#fed151, #de9815);
+  width: 50%;
+ height: 60vh;
+ padding-top: 50px;
+margin:auto;
+  /* visibility:hidden; */
+
+}
+
+
+.wrapper{
+  background:#f6f6f6;
+  max-width: 360px;
+  border-radius: 10px;
+  width:100%;
+  margin: auto;
+  padding: 30px;
+}
+
+.wrapper .outer{
+ height: 135px;
+ width: 135px;
+ overflow: hidden;
+}
+
+.outer .emojis{
+  height: 500%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.outer li{
+  height:20%;
+  width:100%;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+#star-2:checked ~ .content-feedback .outer .slideImg{
+  margin-top: -135px;
+}
+#star-3:checked ~ .content-feedback .outer .slideImg{
+ margin-top: -270px;
+}
+#star-4:checked ~ .content-feedback .outer .slideImg{
+ margin-top: -405px;
+}
+#star-5:checked ~ .content-feedback .outer .slideImg{
+ margin-top: -540px;
+}
+
+
+.wrapper .content-feedback{
+  padding:30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outer li{
+  list-style: none;
+}
+
+.outer li img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.content-feedback .stars{
+  margin-top: 15px;
+  /* margin-left: 15px; */
+}
+
+.stars label{
+  font-size: 30px;
+  margin: 0 3px;
+  color: #ccc;
+}
+
+#star-1:hover ~ .content-feedback .stars .star-1,
+#star-1:checked ~ .content-feedback .stars .star-1,
+
+#star-2:hover ~ .content-feedback .stars .star-1,
+#star-2:checked ~ .content-feedback .stars .star-1,
+#star-2:checked ~ .content-feedback .stars .star-2,
+
+#star-3:hover ~ .content-feedback .stars .star-1,
+#star-3:hover ~ .content-feedback .stars .star-2,
+#star-3:checked ~ .content-feedback .stars .star-1,
+#star-3:checked ~ .content-feedback .stars .star-2,
+#star-3:checked ~ .content-feedback .stars .star-3,
+
+#star-4:hover ~ .content-feedback .stars .star-1,
+#star-4:hover ~ .content-feedback .stars .star-2,
+#star-4:hover ~ .content-feedback .stars .star-3,
+#star-4:checked ~ .content-feedback .stars .star-1,
+#star-4:checked ~ .content-feedback .stars .star-2,
+#star-4:checked ~ .content-feedback .stars .star-3,
+#star-4:checked ~ .content-feedback .stars .star-4,
+
+#star-5:hover ~ .content-feedback .stars .star-1,
+#star-5:hover ~ .content-feedback .stars .star-2,
+#star-5:hover ~ .content-feedback .stars .star-3,
+#star-5:hover ~ .content-feedback .stars .star-4,
+#star-5:checked ~ .content-feedback .stars .star-1,
+#star-5:checked ~ .content-feedback .stars .star-2,
+#star-5:checked ~ .content-feedback .stars .star-3,
+#star-5:checked ~ .content-feedback .stars .star-4,
+#star-5:checked ~ .content-feedback .stars .star-5
+
+{
+  color:#fed151;
+}
+
+
+
+.wrapper .footer{
+  height: 55px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+  border-radius: 0 0 10px 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer .textF::before{
+  content: 'Rate Your Experience';
+}
+
+.footer .numb::before{
+  content: '0 out of 5';
+}
+
+#star-1:checked ~ .footer .textF::before{
+  content: 'I just hate it';
+}
+#star-1:checked ~ .footer .numb::before{
+ content: '1 out of 5';
+}
+#star-2:checked ~ .footer .textF::before{
+ content: "I don't like it"
+}
+#star-2:checked ~ .footer .numb::before{
+content: '2 out of 5';
+}
+#star-3:checked ~ .footer .textF::before{
+ content: 'It is awesome';
+}
+#star-3:checked ~ .footer .numb::before{
+content: '3 out of 5';
+}
+#star-4:checked ~ .footer .textF::before{
+ content: 'I just like it';
+}
+#star-4:checked ~ .footer .numb::before{
+content: '4 out of 5';
+}
+#star-5:checked ~ .footer .textF::before{
+ content: 'I just love it';
+}
+#star-5:checked ~ .footer .numb::before{
+content: '5 out of 5';
+}

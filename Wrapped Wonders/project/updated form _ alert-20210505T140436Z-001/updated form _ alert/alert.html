@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+	  
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+        
+		<style>
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CSS of alert box>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+     /*---------------- adding color to text of alert box------------ */
+		 #alertMsg{
+			  color:rgb(138, 136, 136) ;
+			 }
+	/*------------------- giving different properties to modal body-------------- */
+		  #alertMsg .modal-body{
+		       background: url(alert.jpg);
+			   background-position: center; 
+			   background-repeat: no-repeat; 
+			   background-size: cover;
+			   height:500px;
+			   font-size:2em;
+			   border:none;
+		   }
+
+     /* -------------------------giving font properties to heading----------------- */
+            #alertMsg .modal-body h1{
+			   font-size:2em;
+			   font-weight:600;
+			   margin-left:45px;
+			}
+    /*--------------------------- giving margin to p tag -------------------*/
+			#alertMsg .modal-body p {
+			   margin-left:45px;
+			}
+ /* -------------------------giving font & color  to span----------------- */     
+			#alertMsg .modal-body p span{
+			   color:crimson;
+			   font-weight:500;
+			   font-size:33px;
+			}
+    /* -------------------------giving color to gift font icon----------------- */
+			#alertMsg .modal-body p i{
+			  color:crimson;
+			}
+	/*--------------------------- giving margin to end line-------------------*/		
+           #alertMsg #endline{
+			  margin-top:130px;
+			   margin-left:15px;
+			}
+		</style>
+	 </head>
+	<body>
+<!-----------------------------------------------Start Of Alert Box ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <div class="modal" id="alertMsg" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1> HOORAY!!!</h1><br>
+                        <p> Welcome to the <br> <span>WRAPPED WONDERS</span> <br>Family <i class="fas fa-gift"></i></p>
+                        <p id='endline'> You will never struggle to <br>find a gift again</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+<!----------------------------------------------EndOf Alert Box ------------------------------------->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+         <script>
+
+//-----------------------------------------------Start Of Alert Box -------------------------------------
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>          
+			$(document).ready(function(){
+			setTimeout(function() {
+				$('#alertMsg').modal("show");
+			}, 5000);
+				
+			});
+//-----------------------------------------------End Of Alert Box -------------------------------------
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   	
+		</script>
+
+	</body>
+</html>
